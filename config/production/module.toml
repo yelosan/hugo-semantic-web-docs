@@ -1,0 +1,5 @@
+[[imports]]
+  path = "github.com/YourOnly-One/hugo-semantic-web"
+
+[[imports]]
+  path = "github.com/bep/docuapi/v2"

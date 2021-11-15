@@ -1,0 +1,210 @@
+<!doctype html>
+{{/* Multilang support for lang attribute */}}
+<html lang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}" prefix="og: https://ogp.me/ns#{{ if in .Site.Params.mainTypes .Type }} article: https://ogp.me/ns/article#{{ end }}">
+  <head>
+    <meta charset="utf-8">
+    {{- /* if not .Site.IsServer }}
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; default-src 'none'; child-src 'self' https:; connect-src 'self' https:; font-src 'self' data: https:; frame-src 'self' https:; img-src 'self' data: https:; manifest-src 'self' https:; media-src 'self' https:; object-src 'none'; prefetch-src 'self' https:; script-src 'self' https: 'unsafe-inline'; style-src 'self' https: 'unsafe-inline'; worker-src 'self' https:; base-uri 'self'; form-action 'self' https:;" />
+    {{ end */ -}}
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    {{- /* BGN: Translations */ -}}
+      {{- if .IsTranslated }}
+      {{ range .AllTranslations -}}
+      <link rel="alternate" hreflang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}" href="{{ .Permalink }}" />
+      {{ end -}}
+      {{ range first 1 .AllTranslations }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />{{ end }}
+      {{- end -}}
+    {{- /* END: Translations */ -}}
+    {{ range .AlternativeOutputFormats }}
+      <link rel="{{ .Rel }}" type="{{ .MediaType.Type | html }}" href="{{ .Permalink | safeURL }}" />
+    {{- end }}
+    <meta name="robots" content="{{ if or (eq .Kind "taxonomy") (eq .Kind "term") }}noindex{{ else if .Params.metarobots }}{{ .Params.metarobots }}{{ else }}index{{ end }}, follow" />
+    {{ with .Params.redirectto }}<meta http-equiv="refresh" content="0; url='{{ . }}'" />{{ end }}
+    <meta name="author" content="{{ $.Param "author.name" }}" />
+    {{ with (.Param "description") }}<meta name="description" content="{{ . | plainify }}" />{{ end }}
+    <meta name="keywords" content="{{ with or ($.Param "keywords") ($.Param "tags") }}{{ delimit . ", " }}{{ end }}" />
+    <meta name="created" content="{{ .Date.Format "2006-01-02T15:04:05-0700" }}">
+    <meta name="modified" content="{{ .Lastmod.Format "2006-01-02T15:04:05-0700" }}">
+    {{ template "_internal/opengraph.html" . }}
+    {{ template "_internal/twitter_cards.html" . }}
+    {{ with .Site.Social.twitter_creator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
+    {{ with .Site.Social.twitter_domain }}<meta name="twitter:domain" content="{{ . }}">{{ end }}
+    {{ with .Site.Social.twitter_site }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
+    {{ partial "schemas/semweb.html" . }}
+    {{ if site.IsServer }}
+      <meta http-equiv="cache-control" content="no-cache">
+    {{ end }}
+
+    {{ hugo.Generator }}
+
+    {{- with and (not .Site.IsServer) (.Site.Params.googleTagManager) -}}
+      <script>
+        (function(w,d,s,l,i) {
+          w[l]=w[l]||[];
+          w[l].push( { 'gtm.start': new Date().getTime(), event:'gtm.js' } );
+          var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),
+              dl=l!='dataLayer'?'&l='+l:'';
+              j.async=true;
+              j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+              f.parentNode.insertBefore(j,f);
+        } )
+        (window,document,'script','dataLayer','{{ . }}');
+      </script>
+    {{- end -}}
+
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>
+      {{ .Title }}
+    </title>
+    {{ partial "styles.html" . }}
+    {{ partial "js.html" . }}
+    {{ partial "hook_head_end.html" . }}
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cc-icons/cc-icons/css/cc-icons.min.css" media="all" type="text/css" crossorigin="anonymous" />
+    <link href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license" />
+    {{ $doccss := resources.Get "css/style.css" }}
+    {{ $docstyle := $doccss | resources.Minify }}
+    <link rel="stylesheet" href="{{ $docstyle.RelPermalink }}" media="all" type="text/css" />
+    {{ $semwebcss := resources.Get "css/semweb-style.css" }}
+    {{ $semwebstyle := $semwebcss | resources.Minify }}
+    <link rel="stylesheet" href="{{ $semwebstyle.RelPermalink }}" media="all" type="text/css" />
+
+  </head>
+  <body class="index" x-data="{ navOpen: false }">
+    {{- with and (not .Site.IsServer) (.Site.Params.googleTagManager) -}}
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ . }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+    {{- end -}}
+    <a href="#" id="nav-button" @click="navOpen = !navOpen" :class="{'open': navOpen }">
+      <span>
+        NAV
+        <img src='{{ relURL "images/navbar.png" }}'/>
+      </span>
+    </a>
+    <div class="toc-wrapper" :class="{'open': navOpen }">
+      {{ partial "hook_left_sidebar_start.html" . }}
+      {{ partial "hook_left_sidebar_logo.html" . }}
+      {{ if .Site.Params.search }}
+        <div class="search" x-data="searchController">
+          <input x-model.debounce.100ms="query" type="search" class="search" id="input-search" placeholder='{{ T "search" . }}'>
+          <ul class="search-results visible" x-show="results.length > 0" x-transition.duration.700ms >
+            <template x-for="item in results">
+              <li>
+                <a x-text="item.title"></a>
+              </li>
+            </template>
+          </ul>
+        </div>
+      {{ end }}
+      {{ block "toc" . }}{{ end }}
+      {{ if .IsTranslated }}
+        <ul class="toc-footer">
+          <li class="toc-h1">
+            {{ T "translations" (len .Translations ) }}
+          </li>
+          {{ partial "translations.html" . }}
+        </ul>
+      {{ end }}
+      {{ with .Site.Params.toc_footers }}
+        <ul class="toc-footer">
+          {{ range . }}
+            <li>
+              {{ . | markdownify }}
+            </li>
+          {{ end}}
+        </ul>
+      {{ end}}
+      {{ partial "hook_left_sidebar_end.html" . }}
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        {{block "main" .}}
+          This is the main content.
+        {{end}}
+      </div>
+      <div class="dark-box">
+        {{ with .Site.Params.language_tabs }}
+          <div class="lang-selector" x-data="langController" x-init="initLangs({{ . | jsonify }})">
+            <template x-for="(tab, index) in tabs">
+              <a x-text="tab.name" :class="{ 'active': tab.active }" @click="changeLanguage(index)"></a>
+            </template>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+    {{ partial "hook_body_end.html" . }}
+
+    <!-- BGN: Hugo Yuki Footer -->
+      <!-- BGN: Yuki_Copyleft -->
+        <footer id="Yuki_site_footer" class="global_footer grid_center">
+          <div class="menu_footer txt_center">
+            <a href="{{ .Site.BaseURL }}" rel="noopener">{{ i18n "home" }}</a>
+            ・ <a href="https://github.com/YourOnly-One/hugo-semantic-web" rel="noopener external">{{ i18n "githubproject" }}</a>
+            ・ <a href="https://github.com/YourOnly-One/hugo-semantic-web/discussions" rel="noopener external">{{ i18n "discussion" }}</a>
+            ・ <a href="https://github.com/YourOnly-One/hugo-semantic-web/issues" rel="noopener external">{{ i18n "issues" }}</a>
+            ・ <a href="https://github.com/YourOnly-One/hugo-semantic-web-docs" rel="noopener external">{{ i18n "githubdocs" }}</a>
+            ・ <a href="https://gohugo.io" rel="noopener external">Hugo</a>
+            ・ <a href="https://youronly.one" rel="me noopener external">YourOnly.One</a>
+          </div>
+          {{- /*
+          <div class="ypub txt_left">
+            <a href="https://yelosan.youronly.one" title="Yelosan Publishing" rel="noopener external">&#x1F90E;</a>
+          </div>
+          */ -}}
+          <div class="cc_icons txt_center">
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" aria-label="Content License: Creative Commons Attribution-ShareAlike 4.0 International" rel="license noopener external nofollow"><i style="text-decoration: none;" class="cc cc-cc cc-2x text-red" aria-hidden="true" title="Content License: Creative Commons Attribution-ShareAlike 4.0 International"></i> <i class="cc cc-by cc-2x text-green" aria-hidden="true" title="Content License: Creative Commons Attribution-ShareAlike 4.0 International"></i> <i class="cc cc-sa cc-2x text-blue" aria-hidden="true" title="Content License: Creative Commons Attribution-ShareAlike 4.0 International"></i></a>
+          </div>
+          <div class="copyleft txt_center">
+            {{ i18n "ContentOnBGN" }} <span xmlns:dct="https://purl.org/dc/terms/" property="dct:title"><b>{{ .Site.Title }}</b></span> {{ i18n "copyleft" }} &#x1F12F; {{ if eq now.Year .Site.Params.siteStartYear }}{{ now.Year }}{{ else }}{{ .Site.Params.siteStartYear }}–{{ now.Year }}{{ end }} <a xmlns:cc="https://creativecommons.org/ns#" href="https://youronly.one" property="cc:attributionName" rel="cc:attributionURL me noopener external">
+              <ruby>
+                <rbc>
+                  <rb>Yahuhanan</rb>
+                </rbc>
+                <rp>(</rp><rt xml:lang="he" lang="he">יהוחנן</rt><rp>)</rp>
+              </ruby>
+              <ruby>
+                <ruby>
+                  <ruby>
+                    <rbc>
+                      <rb xml:lang="ja-Latn" lang="ja-Latn">Yukia</rb>
+                    </rbc>
+                    <rp>(</rp><rt xml:lang="ja-Hani" lang="ja-Hani">雪亮</rt><rp>)</rp>
+                  </ruby><rp>(</rp><rt xml:lang="ja-Hira" lang="ja-Hira">ゆきあ</rt><rp>)</rp>
+                </ruby><!-- <rp>(</rp><rt xml:lang="zh-Latn" lang="zh-Latn">Xuěliàng</rt><rp>)</rp> --> <!-- This should be rtc_under but the serious bug in Chromium-based browsers is blocking us from doing this correctly. -->
+              </ruby>
+              <ruby>
+                <ruby>
+                  <rbc>
+                    <rb xml:lang="fil" lang="fil">Sese</rb>
+                  </rbc>
+                  <rp>(</rp><rt xml:lang="zh" lang="zh">謝</rt><rp>)</rp>
+                </ruby><rp>(</rp><rt xml:lang="zh-Latn" lang="zh-Latn">Xie</rt><rp>)</rp>
+              </ruby>
+              <ruby>
+                <rbc>
+                  <rb>Cuneta</rb>
+                </rbc>
+                <rp>(</rp><rt xml:lang="tl-Tglg" lang="tl-Tglg">ᜃᜓᜈᜒᜆ</rt><rp>)</rp>
+              </ruby>
+            </a> {{ i18n "ContentOnEND" }}
+          </div>
+          {{- /*
+          <div class="gfiles txt_right">
+            <a href="https://im.youronly.one/way/" title="I Want to Believe!" rel="noopener external">&#x1F54E;</a>
+          </div>
+          */ -}}
+        </footer>
+      <!-- END: Yuki -->
+      <br/>
+      <p class="txt_center"><small>
+        {{ i18n "poweredby" }} <a href="https://gohugo.io/" rel="noopener external nofollow">Hugo</a>
+        | <a href="https://github.com/bep/docuapi" rel="noopener external nofollow">DocuAPI</a> {{ i18n "themeby" }} <a href="https://github.com/bep" rel="noopener external nofollow">Bjørn Erik Pedersen</a>
+      </small></p>
+    <!-- END: Hugo Yuki Footer -->
+
+  </body>
+</html>

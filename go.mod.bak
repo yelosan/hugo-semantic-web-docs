@@ -1,0 +1,9 @@
+module github.com/YourOnly-One/hugo-semantic-web-docs
+
+go 1.17
+
+require (
+	github.com/YourOnly-One/hugo-semantic-web latest
+	github.com/bep/docuapi latest
+	github.com/bep/docuapi/v2 latest
+)

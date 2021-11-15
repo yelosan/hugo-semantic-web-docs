@@ -1,0 +1,9 @@
+replacements = [
+  "github.com/YourOnly-One/hugo-semantic-web -> /home/yuki/repos/hugo-modules/hugo-semantic-web"
+]
+
+[[imports]]
+  path = "github.com/YourOnly-One/hugo-semantic-web"
+
+[[imports]]
+  path = "github.com/bep/docuapi/v2"

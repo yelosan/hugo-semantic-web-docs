@@ -1,0 +1,198 @@
+# Translations for Philippine English
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# BGN: Date and Time Formats
+  [datetimelongtzd]
+    other = "2006-01-02 15:04:05Z07:00"
+  [datetimelongtzn]
+    other = "2006-01-02 15:04:05 MST"
+  [datetimetzd]
+    other = "2006-01-02 15:04Z07:00"
+  [datetimetzn]
+    other = "2006-01-02 15:04 MST"
+  [date]
+    other = "2006-01-02"
+  [timelongtzd]
+    other = "15:04:05Z07:00"
+  [timelongtzn]
+    other = "15:04:05 MST"
+  [timetzd]
+    other = "15:04Z07:00"
+  [timetzn]
+    other = "15:04 MST"
+# END: Date and Time Formats
+
+# BGN: YourOnly.One: Global
+  [home]
+    other = "Home"
+  [translations]
+    other = "Translations"
+  [postAvailable]
+    other = "Also available in"
+  [featuredposts]
+    other = "Featured Posts"
+  [recentposts]
+    other = "Recent Posts"
+  [search]
+    other = "Search"
+# END: YourOnly.One: Global
+
+# BGN: attribution and license
+  [attribution_by]
+    other = "by"
+  [attribution_licensedunder]
+    other = "licensed under"
+  [attribution_cc0_extent]
+    other = "To the extent possible under law"
+  [attribution_cc0_waived]
+    other = "waived all copyright and related or neighbouring rights"
+  [attribution_cc0_publishedfrom]
+    other = "This work is published from"
+  [attribution_publicdomain]
+    other = "free of known copyright restrictions"
+  [attribution_allrightsreserved]
+    other = "The work shown above is Copyrighted"
+  [attribution_allrightsreservedcover]
+    other = "The cover image used in this article is Copyrighted"
+  [attribution_ccbysa4]
+    other = "Creative Commons Attribution-ShareAlike 4.0 International"
+  [attribution_directedby]
+    other = "Directed by"
+  [attribution_musicby]
+    other = "Music by"
+# END: attribution and license
+
+# BGN: YourOnly.One: attribution and license
+  [quote_src]
+    other = ","             # add a space before if using a word
+# END: YourOnly.One: attribution and license
+
+# BGN: generic words
+  [word_is]
+    other = "is"
+  [word_has]
+    other = "has"
+  [word_to]
+    other = "to"
+  [word_coverimage]
+    other = "・ Cover image:"
+  [word_date]
+    other = "Date"
+  [word_time]
+    other = "Time"
+  [word_location]
+    other = "Location"
+# END: generic words
+
+# BGN: YourOnly.One: generic words
+  [word_countryname]
+    other = "the Philippines"
+# END: YourOnly.One: generic words
+
+# BGN: punctuations
+  [punctuation_colon]
+    other = ":"
+  [punctuation_fullstop]
+    other = "."
+  [punctuation_pause]
+    other = ","
+# END: punctuations
+
+# BGN: YourOnly.One: footer
+  [BestViewedInBGN]
+    other = "Best viewed in"
+  [BestViewedInEND]
+    other = "browsers."
+  [copyleft]
+    other = "Copyleft"
+  [ContentOnBGN]
+    other = "Content on"
+  [ContentOnEND]
+    other = "unless otherwise specified."
+  [PermissionsBeyondScope]
+    other = "Permissions beyond the scope of this license may be available at"
+  [about]
+    other = "About Us"
+  [terms]
+    other = "Terms of Service"
+  [privacy]
+    other = "Privacy Policy"
+  [legal]
+    other = "Legal Notice"
+  [disclosure]
+    other = "Disclosure"
+  [contact]
+    other = "Contact Us"
+  [GeckoBased]
+    other = " Gecko-based"
+  [GoannaBased]
+    other = " Goanna-based"
+  [freehostingby]
+    other ="Free 250 GB hosting by"
+  [poweredby]
+    other = "Powered by"
+  [themeby]
+    other = "theme by"
+  [gift-didyoulikeit]
+    other = "Did you like it? Do share this post, leave a comment below, and"
+  [gift-sendme]
+    other = "send me a gift"
+  [opensnewtab]
+    other = "(opens in a new tab/window)"
+# END: YourOnly.One: footer
+
+# BGN: SemWeb footer
+  [githubproject]
+    other = "Project (GitHub)"
+  [discussion]
+    other = "Discussion"
+  [issues]
+    other = "File an Issue"
+  [githubdocs]
+    other = "Documentation (GitHub)"
+# END: SemWeb footer
+
+# BGN: Social services
+  [baidu]
+    other = "Baidu"
+  [diaspora]
+    other = "*diaspora"
+  [douban]
+    other = "Douban"
+  [facebook]
+    other = "Facebook"
+  [hackernews]
+    other = "Hacker News"
+  [hatena]
+    other = "Hatena"
+  [kakao]
+    other = "Kakao"
+  [kakaotalk]
+    other = "KakaoTalk"
+  [keybase]
+    other = "Keybase"
+  [line]
+    other = "Line"
+  [linkedin]
+    other = "LinkedIn"
+  [messenger]
+    other = "Messenger"
+  [pinterest]
+    other = "Pinterest"
+  [reddit]
+    other = "Reddit"
+  [skype]
+    other = "Skype"
+  [telegram]
+    other = "Telegram"
+  [tumblr]
+    other = "Tumblr"
+  [twitter]
+    other = "Twitter"
+  [wechat]
+    other = "WeChat"
+  [weibo]
+    other = "Weibo"
+  [whatsapp]
+    other = "WhatsApp"
+# END: Social services

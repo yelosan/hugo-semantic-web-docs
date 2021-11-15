@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ens on Semantic Web for Hugo</title>
+    <link>https://semweb.youronly.one/en/</link>
+    <description>Recent content in Ens on Semantic Web for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://semweb.youronly.one/en/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Semantic Web for Hugo</title>
+      <link>https://semweb.youronly.one/en/main/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://semweb.youronly.one/en/main/</guid>
+      <description>IntroSemantic Web for Hugo adds structured data and linked data into a Hugo-powered website. Through it search engines can easily read the data of a Hugo-powered website and establish relationships between objects. This enables search engines to intelligently store information about a website and use it to increase a website&amp;rsquo;s exposure in search results. For this project, we chose to implement Schema.org&amp;rsquo;s Vocabulary by adding JSON-LD markup automatically. In areas</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,12 @@
+github.com/YourOnly-One/hugo-semantic-web v1.1.0 h1:Vf8a6uFNHOZCEUNwmG/0eAGEfMh50+tFlcIRYHyuCLo=
+github.com/YourOnly-One/hugo-semantic-web v1.1.0/go.mod h1:ou1G3eoSHdluO1VwvMgRbdzc9qidrCbKahCKjjdrEJg=
+github.com/bep/docuapi v1.5.2 h1:x39iR9Bt0YDDXVhzyGZANi4S1OOSKfBq2NqEeW4DhSw=
+github.com/bep/docuapi v1.5.2/go.mod h1:0QF8FyVUQtcPTyCpKcgiecRRWvYo3gc89muadDzkZpw=
+github.com/bep/docuapi/v2 v2.0.1 h1:q1vDauv1jpIs2aq3LCi57Yx9jVan9Qd52mFUiF+wCjs=
+github.com/bep/docuapi/v2 v2.0.1/go.mod h1:AxyDlyMg0IFgVd/Ph0sjrboKd0iO/8/QccAwcdNABMA=
+github.com/bep/empty-hugo-module v1.0.0 h1:aYc9RWea644CdYjg9zCy8nkVF4KjC3fwhUTvvcXXg8s=
+github.com/bep/empty-hugo-module v1.0.0/go.mod h1:whohinbSjMoFi/Skivj9kvdPs1tEgzYpZ4rXoQk/0/I=
+github.com/gohugoio/hugo-mod-jslibs-dist/alpinejs/v3 v3.401.201/go.mod h1:WWQxcmPs5Xy3xDgi29ipkmZT6NKVb3bsqyCDTY3eYYY=
+github.com/jquery/jquery-dist v0.0.0-20210302171154-e786e3d9707f/go.mod h1:/lTfttEqFU0GWTaOOMIeNTzLGQ7yTIgyzjtkS/pYIoc=
+github.com/olivernn/lunr.js v2.3.9+incompatible/go.mod h1:yEkQ1DUSMtNsn8n2CqvQXZd0ErWPEG8g9QRmblR+KS8=
+github.com/slatedocs/slate v2.9.2+incompatible/go.mod h1:n698aXLkExWIlF7prJey0Kq6wlKIKvj/stVb5oouZDM=
