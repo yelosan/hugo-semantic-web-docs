@@ -11,7 +11,10 @@ videos = ["https://www.youtube.com/watch?v=OM6XIICm_qo", "https://vimeo.com/6010
 
 For this project, we chose to implement *Schema.org*'s Vocabulary by adding *JSON-LD* markup automatically. In areas where custom input is required, we took advantage of Hugo's shortcode feature.
 
-Latest version: v1.0.0 "감사합니다 (gamsahabnida)" released on 2021-11-08.
+Latest version: [v1.1.0: ᜐᜎᜋᜆ᜔ (salamat)](https://github.com/YourOnly-One/hugo-semantic-web/releases) released on 2012-11-15.
+
+## History
+* v1.0.0 "감사합니다 (gamsahabnida)" released on 2021-11-08.
 
 ## Features
 These are the currently supported Schema.org Types:
