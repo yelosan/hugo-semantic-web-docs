@@ -15,7 +15,7 @@
 vendor/
 
 # Hugo
-#public/
+public/
 resources/
 _vendor/
 
