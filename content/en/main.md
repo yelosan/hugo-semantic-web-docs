@@ -35,25 +35,25 @@ These are the currently supported Schema.org Types:
 
 ```toml
 [module]
-		[[module.imports]]
-				path = "github.com/YourOnly-One/hugo-semantic-web"
+  [[module.imports]]
+    path = "github.com/YourOnly-One/hugo-semantic-web"
 ```
 
 ```yaml
 module:
-		imports:
-			- path: github.com/YourOnly-One/hugo-semantic-web
+  imports:
+    - path: github.com/YourOnly-One/hugo-semantic-web
 ```
 
 ```json
 {
-	"module": {
-		"imports": [
-			{
-				"path": "github.com/YourOnly-One/hugo-semantic-web"
-			}
-		]
-	}
+  "module": {
+    "imports": [
+      {
+        "path": "github.com/YourOnly-One/hugo-semantic-web"
+      }
+    ]
+  }
 }
 ```
 
@@ -90,16 +90,16 @@ theme = ["hugo-semantic-web", "your-theme"]
 
 ```yaml
 theme:
-	- hugo-semantic-web
-	- your-theme
+  - hugo-semantic-web
+  - your-theme
 ```
 
 ```json
 {
-	"theme": [
-		"hugo-semantic-web",
-		"your-theme"
-	]
+  "theme": [
+    "hugo-semantic-web",
+    "your-theme"
+  ]
 }
 ```
 
@@ -142,16 +142,16 @@ theme = ["hugo-semantic-web", "your-theme"]
 
 ```yaml
 theme:
-	- hugo-semantic-web
-	- your-theme
+  - hugo-semantic-web
+  - your-theme
 ```
 
 ```json
 {
-	"theme": [
-		"hugo-semantic-web",
-		"your-theme"
-	]
+  "theme": [
+    "hugo-semantic-web",
+    "your-theme"
+  ]
 }
 ```
 
@@ -188,16 +188,16 @@ theme = ["hugo-semantic-web", "your-theme"]
 
 ```yaml
 theme:
-	- hugo-semantic-web
-	- your-theme
+  - hugo-semantic-web
+  - your-theme
 ```
 
 ```json
 {
-	"theme": [
-		"hugo-semantic-web",
-		"your-theme"
-	]
+  "theme": [
+    "hugo-semantic-web",
+    "your-theme"
+  ]
 }
 ```
 
