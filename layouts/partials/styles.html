@@ -1,0 +1,13 @@
+{{ $isDev := ne hugo.Environment "production" }}
+{{ $cssOpts := (dict "targetPath" "styles/screen.css" "enableSourceMap" $isDev ) }}
+{{ $screenCSS := resources.Get "scss/slate/screen.css.scss" | toCSS $cssOpts }}
+{{ $cssOpts = (dict "targetPath" "styles/print.css" "enableSourceMap" $isDev ) }}
+{{ $printCSS := resources.Get "scss/slate/print.css.scss" | toCSS $cssOpts  }}
+{{ if not $isDev }}
+{{ $printCSS = $printCSS |  postCSS | minify | fingerprint }}
+{{ $screenCSS = $screenCSS |  postCSS | minify | fingerprint }}
+{{ end }}
+{{/* YourOnly.One: removed all 'integrity', it is failing in gh-pages */}}
+<link href='{{ $screenCSS.RelPermalink }}' rel="stylesheet" media="screen" />
+<link href='{{ $printCSS.RelPermalink }}' rel="stylesheet" media="print" />
+
