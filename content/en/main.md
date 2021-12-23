@@ -6,9 +6,9 @@ images = ["https://rsc.youronly.one/img/y/Yuki_flag-300h.webp", "https://img.you
 videos = ["https://www.youtube.com/watch?v=OM6XIICm_qo", "https://vimeo.com/601088734"]
 +++
 
+# Intro
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5771170.svg)](https://doi.org/10.5281/zenodo.5771170)
 
-# Intro
 **Semantic Web for Hugo** adds *structured data* and *linked data* into a [Hugo](https://gohugo.io)-powered website. Through it search engines can easily read the data of a Hugo-powered website and establish relationships between objects. This enables search engines to intelligently store information about a website and use it to increase a website's exposure in search results.
 
 For this project, we chose to implement *Schema.org*'s Vocabulary by adding *JSON-LD* markup automatically. In areas where custom input is required, we took advantage of Hugo's shortcode feature.
