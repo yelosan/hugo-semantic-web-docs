@@ -1,20 +1,21 @@
 ####### Base Config #######
   baseURL = "https://semweb.youronly.one/"                    # .Site.BaseURL
   title = "Semantic Web for Hugo"                # .Site.Title; IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
-  copyright = ""                                          # .Site.Copyright; we are using our own footer
+  copyright = ""                                          # .Site.Copyright; leave empty and uncommented to override theme default; we are using our own footer
   timeZone = "Etc/UTC"
 
 ####### Site settings #######
   #footnoteAnchorPrefix = ""                              # prefix for footnote anchors
-  footnoteReturnLinkContents = "↩"                        # text to display for footnote return links
+  footnoteReturnLinkContents = "⤴️"                        # text to display for footnote return links
   #paginate = 8
   #paginatePath = "page"                                  # https://example.com/page/2
   rssLimit = 100
-  summaryLength = 70
+  summaryLength = 100
 
   #### Other settings ####
     #disqusShortname = "youronlyone"                       # .Site.DisqusShortname
-    #googleAnalytics = ""                     # .Site.GoogleAnalytics
+    #googleAnalytics = ""                     # .Site.GoogleAnalytics; we are using GoogleTagManager
+
 
 
 ####### Backend settings #######
@@ -22,8 +23,6 @@
   #disableAliases = true                                  # use this if we want to use server redirects
   enableEmoji = true                                      # format :smile:
   enableGitInfo = false                                   # it is in Git time
-  enableInlineShortcodes = false                          # disabled for security reasons as per Hugo documentation
-  enableRobotsTXT = false                                 # Hugo robots.txt template
   relativeURLs = false                                    # false for our use-case; make all relative URLs relative to content root
   refLinksNotFoundURL = "https://semweb.youronlyone.one/"
 
@@ -32,17 +31,13 @@
     enableMissingTranslationPlaceholders = true
 
   ## Other settings ##
-    disableKinds = ["taxonomyTerm"]
+    disableKinds = ["robotsTXT", "taxonomyTerm"]
 
 #### LANG stuff ####
   defaultContentLanguage = "en"
   defaultContentLanguageInSubdir = false
   hasCJKLanguage = true
   languageCode = "en"
-
-  ## Theme settings ##
-    #pluralizeListTitles = false
-  ## Theme settings ##
 
 
 #######  #######  #######  #######  #######  #######  #######  #######
