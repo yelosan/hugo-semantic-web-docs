@@ -1,0 +1,4 @@
+date = [":default"]											# ":default" =  ["date", "publishDate', "lastmod"]
+expiryDate = [":default"]								# ":default" = ["expiryDate"]
+lastmod = ["lastmod", ":fileModTime", ":default"]									# ":default" = [":git", "lastmod", "date", "publishDate"]
+publishDate = [":default"]							# ":default" = ["publishDate", "date"]
