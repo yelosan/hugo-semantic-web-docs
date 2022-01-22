@@ -5,7 +5,7 @@ disableJS = false																				# default: false
 disableJSON = false																			# default: false
 disableSVG = false																			# default: false
 disableXML = false																			# default: false
-minifyOutput = false																		# default: false
+minifyOutput = true																		# default: false
 
 [tdewolff]
 	[tdewolff.css]
