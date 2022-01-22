@@ -1,6 +1,6 @@
 replacements = [
-  "github.com/YourOnly-One/hugo-semantic-web -> /home/yuki/repos/hugo-modules/hugo-semantic-web",
-  "github.com/bep/docuapi/v2 -> /home/yuki/repos/hugo-themes/semweb-hugo-theme-docuapi"
+  "github.com/YourOnly-One/hugo-semantic-web -> /home/yuki/repos/yuki/hugo-modules/hugo-semantic-web",
+  "github.com/bep/docuapi/v2 -> /home/yuki/repos/yuki/hugo-themes/semweb-hugo-theme-docuapi"
 ]
 
 [[imports]]
