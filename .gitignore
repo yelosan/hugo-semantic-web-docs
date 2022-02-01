@@ -28,6 +28,8 @@ desktop.ini
 cache/
 .sass-cache
 
+# npm
+node_modules/
+
 # project
 jsconfig.json
-node_modules/
