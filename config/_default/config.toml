@@ -10,7 +10,7 @@
   #paginate = 8
   #paginatePath = "page"                                  # https://example.com/page/2
   rssLimit = 100
-  summaryLength = 100
+  summaryLength = 100                                     # default: 70
 
   #### Other settings ####
     #disqusShortname = "youronlyone"                       # .Site.DisqusShortname
