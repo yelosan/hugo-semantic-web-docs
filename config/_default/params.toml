@@ -1,7 +1,5 @@
 #mainSections = ["blog", "posts"]                                             # Hugo default
 
-#googleTagManager = "GTM-"
-
 ### BGN: Structured Data ###
 	siteStartYear = 2021
 
