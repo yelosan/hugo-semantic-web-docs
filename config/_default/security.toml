@@ -3,7 +3,7 @@
 enableInlineShortcodes = false                          # disabled for security reasons as per Hugo documentation
 
 [exec]
-  allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+  allow = ['^dart-sass-embedded$', '^go$', '^npx$', '^postcss$', '^pandoc$']
   osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
 
 [funcs]

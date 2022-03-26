@@ -21,13 +21,13 @@ jobs:
         uses: peaceiris/actions-hugo@v2
         with:
           #hugo-version: 'latest'
-          hugo-version: '0.90.1'
+          hugo-version: '0.95.0'
           extended: true
 
       - name: Setup Node
         uses: actions/setup-node@v2
         with:
-          node-version: '16.13.0'
+          node-version: '16.14.2'
 
       - name: Cache npm dependencies
         uses: actions/cache@v2

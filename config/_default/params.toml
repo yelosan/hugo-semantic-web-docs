@@ -1,5 +1,7 @@
 #mainSections = ["blog", "posts"]                                             # Hugo default
 
+websubhubs = ["https://pubsubhubbub.appspot.com/", "https://youronlyone.superfeedr.com/", "https://pubsubhubbub.superfeedr.com/", "https://websubhub.com/hub"]
+
 ### BGN: Structured Data ###
 	siteStartYear = 2021
 

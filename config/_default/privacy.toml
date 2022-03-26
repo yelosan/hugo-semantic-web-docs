@@ -5,7 +5,7 @@
 
 [googleAnalytics]
   anonymizeIP = true
-  disable = false
+  disable = true
   respectDoNotTrack = true
   useSessionStorage = true
 
