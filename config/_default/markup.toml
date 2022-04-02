@@ -1,0 +1,54 @@
+# See: https://gohugo.io/getting-started/configuration-markup
+
+defaultMarkdownHandler = "goldmark"                               # default: goldmark
+
+[asciidocExt]
+  backend = "html5"                                               # default: html5
+  extensions = []                                                 # default: []
+  failureLevel = "fatal"                                          # default: fatal
+  noHeaderOrFooter = true                                         # default: true
+  preserveTOC = false                                             # default: false
+  safeMode = "unsafe"                                             # default: unsafe
+  sectionNumbers = false                                          # default: false
+  trace = false                                                   # default: false
+  verbose = false                                                 # default: false
+  workingFolderCurrent = false                                    # default: false
+  [asciidocExt.attributes]
+
+[goldmark]
+  [goldmark.extensions]
+    definitionList = true                                         # default: true
+    footnote = true                                               # default: true
+    linkify = true                                                # default: true
+    strikethrough = true                                          # default: true
+    table = true                                                  # default: true
+    taskList = true                                               # default: true
+    typographer = true                                            # default: true
+  [goldmark.parser]
+    autoHeadingID = true                                          # default: true
+    autoHeadingIDType = "github"                                  # default: github
+    [goldmark.parser.attribute]
+      block = true                                               # default: false; keep true to use attributes in block type markdown
+      title = true                                                # default: true
+  [goldmark.renderer]
+    hardWraps = false                                             # default: false
+    unsafe = true                                                # default: false; keep true to use full HTML in markdown files
+    xhtml = false                                                 # default: false
+
+[highlight]
+  anchorLineNos = false                                           # default: false
+  codeFences = true                                               # default: true
+  guessSyntax = true                                             # default: false
+  hl_Lines = ""                                                   # default: ""
+  lineAnchors = ""                                                # default: ""
+  lineNoStart = 1                                                 # default: 1
+  lineNos = false                                                 # default: false
+  lineNumbersInTable = true                                       # default: true
+  noClasses = true                                                # default: true
+  style = "monokai"                                               # default: monokai
+  tabWidth = 4                                                    # default: 4
+
+[tableOfContents]
+  endLevel = 3                                                    # default: 3
+  ordered = false                                                 # default: false
+  startLevel = 2                                                  # default: 2

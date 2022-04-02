@@ -1,0 +1,10 @@
+{{- $js := resources.Get "js/index.js" -}}
+{{ $params := (dict "search_config" site.Params.search_config "is_production" hugo.IsProduction ) }}
+{{ $sourceMap := cond hugo.IsProduction "" "inline" }}
+{{ $opts := dict "sourceMap" $sourceMap "minify" hugo.IsProduction "target" "es2018" "params" $params }}
+{{ $js = $js | js.Build $opts }}
+{{ if hugo.IsProduction }}
+  {{ $js = $js | fingerprint }}
+{{ end }}
+{{/* YourOnly.One: removed all 'integrity', it is failing in gh-pages */}}
+<script src="{{ $js.RelPermalink }}" defer></script>

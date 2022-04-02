@@ -1,0 +1,38 @@
+#mainSections = ["blog", "posts"]                                             # Hugo default
+
+websubhubs = ["https://pubsubhubbub.appspot.com/", "https://youronlyone.superfeedr.com/", "https://pubsubhubbub.superfeedr.com/", "https://websubhub.com/hub"]
+
+### BGN: Structured Data ###
+	siteStartYear = 2021
+
+	description = "Semantic Web for Hugo Documentation"
+	license = "https://creativecommons.org/licenses/by-sa/4.0/"
+	keywords = ["Semantic Web", "Linked Data", "SemWeb", "SemHugo", "Semantic Hugo", "YourOnly.One", "techmagus"]
+	#images = [""]
+### END: Structured Data ###
+
+### BGN: Theme settings
+  search = true
+  maxMenuDepth = 3 # (optional) available options are: 1, 2, or 3 (default: 2)
+
+	# Configure the language example tabs.
+	[[language_tabs]]
+	key = "toml"
+	name = "TOML"
+	[[language_tabs]]
+	key = "yaml"
+	name = "YAML"
+	[[language_tabs]]
+	key = "json"
+	name = "JSON"
+### END: Theme settings
+
+### BGN: Other Settings ###
+  [semweb]
+		copyrightnotice = "Copyleft 🄯 CC-BY-SA 4.0 International by JC John Sese Cuneta"
+		credittext = "Semantic Web for Hugo (https://semweb.youronly.one)"
+		datefirstpublished = "2021-11-15"
+		license = "https://creativecommons.org/licenses/by-sa/4.0/"
+		publisher = "https://yelosan.youronly.one/"
+		sameas = ["https://github.com/YourOnly-One/hugo-semantic-web", "https://github.com/YourOnly-One/hugo-semantic-web-docs"]
+### END: Other Settings ###

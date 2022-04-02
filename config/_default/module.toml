@@ -1,0 +1,5 @@
+[[imports]]
+  path = "gitlab.com/yelosan/hugo-semantic-web"
+
+[[imports]]
+  path = "github.com/bep/docuapi/v2"

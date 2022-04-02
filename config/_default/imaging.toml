@@ -1,0 +1,4 @@
+resampleFilter = "box"
+quality = 100 # JPEG and WebP quality setting. Default is 75.
+#hint = "photo" # picture; photo; drawing; icon; text; for .WEBP
+anchor = "smart" # for cropping; center, topleft, top, topright, right, bottomright, bottom, bottomleft, left
