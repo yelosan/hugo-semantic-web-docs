@@ -24,5 +24,8 @@
   "devDependencies": {
     "autoprefixer": "^9.7.3",
     "postcss-cli": "^9.1.0"
+  },
+  "dependencies": {
+    "postcss": "^8.4.12"
   }
 }
