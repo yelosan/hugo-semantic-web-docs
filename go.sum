@@ -1,0 +1,15 @@
+github.com/bep/docuapi v1.5.2 h1:x39iR9Bt0YDDXVhzyGZANi4S1OOSKfBq2NqEeW4DhSw=
+github.com/bep/docuapi v1.5.2/go.mod h1:0QF8FyVUQtcPTyCpKcgiecRRWvYo3gc89muadDzkZpw=
+github.com/bep/docuapi/v2 v2.0.5 h1:Xlm+4ODqUczW+HjXnxh44ogkTpot4JH7GWPcPqr3QxE=
+github.com/bep/docuapi/v2 v2.0.5/go.mod h1:hoeibCSjXWJ/fLOwPSo8WZbgl5EO3zQjS/nrAs2v2Ro=
+github.com/gohugoio/hugo-mod-jslibs-dist/alpinejs/v3 v3.500.100/go.mod h1:WWQxcmPs5Xy3xDgi29ipkmZT6NKVb3bsqyCDTY3eYYY=
+github.com/gohugoio/hugo-mod-jslibs-dist/alpinejs/v3 v3.900.100 h1:vEpD998c0khrykCrsDP+rG+1wxLDcMOAWZ2X0BpU5bM=
+github.com/gohugoio/hugo-mod-jslibs-dist/alpinejs/v3 v3.900.100/go.mod h1:WWQxcmPs5Xy3xDgi29ipkmZT6NKVb3bsqyCDTY3eYYY=
+github.com/jquery/jquery-dist v0.0.0-20210302171154-e786e3d9707f/go.mod h1:/lTfttEqFU0GWTaOOMIeNTzLGQ7yTIgyzjtkS/pYIoc=
+github.com/olivernn/lunr.js v2.3.9+incompatible h1:eH8iBnjlR4mwlYDdNuqy9PCNLjp2bEs6aoNnTSaccx0=
+github.com/olivernn/lunr.js v2.3.9+incompatible/go.mod h1:yEkQ1DUSMtNsn8n2CqvQXZd0ErWPEG8g9QRmblR+KS8=
+github.com/slatedocs/slate v2.9.2+incompatible/go.mod h1:n698aXLkExWIlF7prJey0Kq6wlKIKvj/stVb5oouZDM=
+github.com/slatedocs/slate v2.12.0+incompatible h1:Tx72d8/4B+gtDXlnJNU3ulSaZbdpFJ50zXdi4DFfOxQ=
+github.com/slatedocs/slate v2.12.0+incompatible/go.mod h1:n698aXLkExWIlF7prJey0Kq6wlKIKvj/stVb5oouZDM=
+gitlab.com/yelosan/hugo-semantic-web v1.1.2 h1:tQwf7Z65rCzzRcfc4I7J2SClVYLVM/u+nbt210oY6hw=
+gitlab.com/yelosan/hugo-semantic-web v1.1.2/go.mod h1:gt/5DdK44c48oJXo87Wcu+nVrIGV2gE24hVaVWc9aCc=

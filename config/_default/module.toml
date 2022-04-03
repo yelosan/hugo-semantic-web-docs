@@ -3,3 +3,15 @@
 
 [[imports]]
   path = "github.com/bep/docuapi/v2"
+
+[[imports]]
+  path = "github.com/gohugoio/hugo-mod-jslibs-dist/alpinejs/v3"
+
+[[imports]]
+  path = "github.com/olivernn/lunr.js"
+
+[[imports]]
+  path = "github.com/slatedocs/slate"
+
+#[[imports]]
+#  path = "github.com/bep/docuapi"
