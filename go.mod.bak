@@ -1,4 +1,4 @@
-module hugo-semantic-web-docs
+module gitlab.com/yelosan/hugo-semantic-web-docs
 
 go 1.18
 
