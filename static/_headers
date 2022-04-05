@@ -6,7 +6,7 @@ https://:project.pages.dev/*
   X-Content-Type-Options: nosniff
   X-Frame-Options: SAMEORIGIN
   Referrer-Policy: no-referrer,strict-origin-when-cross-origin
-  Cross-Origin-Embedder-Policy: require-corp; report-to="default"
+  Cross-Origin-Embedder-Policy: unsafe-none; report-to="default"
   Cross-Origin-Resource-Policy: cross-origin
   Cross-Origin-Opener-Policy: same-origin; report-to="default"
   Content-Security-Policy: default-src 'none'; script-src 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' https:; script-src-elem 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' https:; script-src-attr 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'report-sample' 'unsafe-inline' https:; style-src-elem 'self' 'report-sample' 'unsafe-inline' https:; style-src-attr 'self' 'report-sample' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' https:; object-src 'none'; prefetch-src 'self' https:; child-src 'self' https:; frame-src 'self' https:; worker-src 'self' https:; frame-ancestors 'self'; form-action 'self' https:; upgrade-insecure-requests; base-uri 'self'; manifest-src 'self' https:; require-trusted-types-for 'script'; report-uri https://yelosan.report-uri.com/r/d/csp/enforce; report-to default
