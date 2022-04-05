@@ -1,0 +1,18 @@
+[[headers]]
+for = '/**'
+[headers.values]
+  Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+  X-Content-Type-Options = "nosniff"
+  X-Frame-Options = "SAMEORIGIN"
+  Referrer-Policy = "no-referrer,strict-origin-when-cross-origin"
+  Cross-Origin-Embedder-Policy = "unsafe-none"
+  Cross-Origin-Resource-Policy = "same-site"
+  Cross-Origin-Opener-Policy = "same-origin"
+  Content-Security-Policy = "default-src 'none'; script-src 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' https:; script-src-elem 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' https:; script-src-attr 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'report-sample' 'unsafe-inline' https:; style-src-elem 'self' 'report-sample' 'unsafe-inline' https:; style-src-attr 'self' 'report-sample' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' https:; object-src 'none'; prefetch-src 'self' https:; child-src 'self' https:; frame-src 'self' https:; worker-src 'self' https:; frame-ancestors 'self'; form-action 'self' https:; upgrade-insecure-requests; base-uri 'self'; manifest-src 'self' https:; require-trusted-types-for 'script'"
+  Permissions-Policy = "accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(self), display-capture=(self), document-domain=(), encrypted-media=*, execution-while-not-rendered=(), execution-while-out-of-viewport=*, fullscreen=(self), geolocation=(), gyroscope=(), keyboard-map=(self), magnetometer=(), microphone=(), midi=(), navigation-override=(self), payment=(), picture-in-picture=*, publickey-credentials-get=(self), screen-wake-lock=(), sync-xhr=(self), usb=(), web-share=(self), xr-spatial-tracking=(self), clipboard-read=(self), clipboard-write=(self), gamepad=(self), speaker-selection=(self), conversion-measurement=(self), focus-without-user-activation=(self), hid=(self), idle-detection=(self), serial=(self), trust-token-redemption=(self), browsing-topics=()"
+  X-Powered-By = "Hugo"
+
+[[redirects]]
+force = false
+status = 404
+to = "/404.html"
