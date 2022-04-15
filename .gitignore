@@ -12,12 +12,13 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
-vendor/
+vendor
 
 # Hugo
-public/
-resources/
-_vendor/
+public
+resources
+_vendor
+config/development/module.toml
 
 # OS files
 .DS_Store
@@ -25,11 +26,8 @@ thumbs.db
 desktop.ini
 
 # Caches
-cache/
+cache
 .sass-cache
 
 # npm
-node_modules/
-
-# project
-jsconfig.json
+node_modules
