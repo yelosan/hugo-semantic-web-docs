@@ -1,17 +1,22 @@
+[hugoVersion]
+  extended = true
+  #max = ""
+  min = "0.97.0"
+
 [[imports]]
   path = "gitlab.com/yelosan/hugo-semantic-web"
 
 [[imports]]
   path = "github.com/bep/docuapi/v2"
 
-[[imports]]
-  path = "github.com/gohugoio/hugo-mod-jslibs-dist/alpinejs/v3"
+#[[imports]]
+#  path = "github.com/gohugoio/hugo-mod-jslibs-dist/alpinejs/v3"
 
-[[imports]]
-  path = "github.com/olivernn/lunr.js"
+#[[imports]]
+#  path = "github.com/olivernn/lunr.js"
 
-[[imports]]
-  path = "github.com/slatedocs/slate"
+#[[imports]]
+#  path = "github.com/slatedocs/slate"
 
 #[[imports]]
 #  path = "github.com/bep/docuapi"
