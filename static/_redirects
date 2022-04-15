@@ -1,0 +1,25 @@
+# 404 redirects (not supported in Cloudflare Pages as of 2022-04-06)
+# /* /404.html 404
+# /confidentraveler/* /404.html 404
+# /faithfulathlete/* /404.html 404
+# /yugenbard/* /404.html 404
+# /p/* /404.html 404
+# /love/* /404.html 404
+# /snoworld/* /404.html 404
+# /techmagus/* /404.html 404
+# /way/* /404.html 404
+# /yuki/* /404.html 404
+
+# Redirect by Language preference (not supported in Cloudflare Pages as of 2022-04-06)
+# /p/* /p/ja/:splat 302 Language:ja
+# /p/* /p/ko/:splat 302 Language:ko
+# /love/* /love/ja/:splat 302 Language:ja
+# /love/* /love/ko/:splat 302 Language:ko
+# /snoworld/* /snoworld/ja/:splat 302 Language:ja
+# /snoworld/* /snoworld/ko/:splat 302 Language:ko
+# /techmagus/* /techmagus/ja/:splat 302 Language:ja
+# /techmagus/* /techmagus/ko/:splat 302 Language:ko
+# /way/* /way/ja/:splat 302 Language:ja
+# /way/* /way/ko/:splat 302 Language:ko
+# /yuki/* /yuki/ja/:splat 302 Language:ja
+# /yuki/* /yuki/ko/:splat 302 Language:ko

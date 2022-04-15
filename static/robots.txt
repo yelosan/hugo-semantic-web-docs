@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+Sitemap: https://im.youronly.one/love/sitemap.xml
+Sitemap: https://im.youronly.one/snoworld/sitemap.xml
+Sitemap: https://im.youronly.one/techmagus/sitemap.xml
+Sitemap: https://im.youronly.one/way/sitemap.xml
+Sitemap: https://im.youronly.one/yuki/sitemap.xml
+Sitemap: https://im.youronly.one/love/en-ph/sitemap.xml
+Sitemap: https://im.youronly.one/love/ja/sitemap.xml
+Sitemap: https://im.youronly.one/love/ko/sitemap.xml
+Sitemap: https://im.youronly.one/snoworld/en-ph/sitemap.xml
+Sitemap: https://im.youronly.one/snoworld/ja/sitemap.xml
+Sitemap: https://im.youronly.one/snoworld/ko/sitemap.xml
+Sitemap: https://im.youronly.one/techmagus/en-ph/sitemap.xml
+Sitemap: https://im.youronly.one/techmagus/ja/sitemap.xml
+Sitemap: https://im.youronly.one/techmagus/ko/sitemap.xml
+Sitemap: https://im.youronly.one/way/en-ph/sitemap.xml
+Sitemap: https://im.youronly.one/way/ja/sitemap.xml
+Sitemap: https://im.youronly.one/way/ko/sitemap.xml
+Sitemap: https://im.youronly.one/yuki/en-ph/sitemap.xml
+Sitemap: https://im.youronly.one/yuki/ja/sitemap.xml
+Sitemap: https://im.youronly.one/yuki/ko/sitemap.xml
+Sitemap: https://im.youronly.one/sitemap-index.xml
+#DaumWebMasterTool:7074b30f2ea0291b815b33b17dfc13f837df178d31f3984ac83bdeb177d26ca2:Rtx+o4FmSLuyTBNv00hSPA==
+#DaumWebMasterTool:66df97cc73a9a11eccab84542b1110ff359377caadb99a3291ff9e86c7b30ba3:Rtx+o4FmSLuyTBNv00hSPA==
