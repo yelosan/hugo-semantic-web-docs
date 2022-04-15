@@ -3,11 +3,13 @@ https://:project.pages.dev/*
 
 /*
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  # X-DNS-Prefetch-Control: off
   X-Content-Type-Options: nosniff
-  X-Frame-Options: SAMEORIGIN
+  X-Frame-Options: DENY
   Referrer-Policy: no-referrer,strict-origin-when-cross-origin
   Access-Control-Allow-Origin: *
-  Vary: Origin
+  #Content-Encoding: gzip, deflate
+  Vary: Upgrade-Insecure-Requests, Origin, Accept-Encoding
 
   ##############################################################################
   ###                      Cross-Origin-Embedder-Policy                      ###
@@ -54,11 +56,13 @@ https://:project.pages.dev/*
   Cross-Origin-Resource-Policy: cross-origin
 
   ### removed: require-trusted-types-for 'script'; ###
-  Content-Security-Policy: default-src 'none'; script-src 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' https:; script-src-elem 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' https:; script-src-attr 'self' 'report-sample' 'unsafe-inline' 'unsafe-eval' https:; style-src 'self' 'report-sample' 'unsafe-inline' https:; style-src-elem 'self' 'report-sample' 'unsafe-inline' https:; style-src-attr 'self' 'report-sample' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' https:; object-src 'none'; prefetch-src 'self' https:; child-src 'self' https:; frame-src 'self' https:; worker-src 'self' https:; frame-ancestors 'self'; form-action 'self' https:; upgrade-insecure-requests; base-uri 'self'; manifest-src 'self' https:; report-uri https://yelosan.report-uri.com/r/d/csp/enforce; report-to default
+  ### removed: script-src-elem 'self' 'report-sample' 'unsafe-inline' https:; script-src-attr 'self' 'report-sample' 'unsafe-inline' https:;  ###
+  ### removed: style-src-elem 'self' 'report-sample' 'unsafe-inline' https:; style-src-attr 'self' 'report-sample' 'unsafe-inline' https:; ###
+  ### CSP moved to Cloudflare worker. _headers file has a 1000-character restriction per line. ###
   Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(self), display-capture=(self), document-domain=(), encrypted-media=*, execution-while-not-rendered=(), execution-while-out-of-viewport=*, fullscreen=(self), geolocation=(), gyroscope=(), keyboard-map=(self), magnetometer=(), microphone=(), midi=(), navigation-override=(self), payment=(), picture-in-picture=*, publickey-credentials-get=(self), screen-wake-lock=(), sync-xhr=(self), usb=(), web-share=(self), xr-spatial-tracking=(self), clipboard-read=(self), clipboard-write=(self), gamepad=(self), speaker-selection=(self), conversion-measurement=(self), focus-without-user-activation=(self), hid=(self), idle-detection=(self), serial=(self), trust-token-redemption=(self), browsing-topics=()
   Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://yelosan.report-uri.com/a/d/g"}],"include_subdomains":true}
   NEL: {"report_to":"default","max_age":31536000,"include_subdomains":true}
-  X-Powered-By: Hugo
+  #X-Powered-By: Hugo
 
   ### Yelosan Publishing: default Cloudflare setting is enough ###
   # Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
