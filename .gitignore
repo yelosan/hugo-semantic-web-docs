@@ -19,6 +19,8 @@ public
 resources
 _vendor
 config/development/module.toml
+go.mod
+go.sum
 
 # OS files
 .DS_Store
