@@ -18,7 +18,8 @@ vendor
 public
 resources
 _vendor
-config/development/module.toml
+config/development
+config/staging
 go.mod
 go.sum
 
