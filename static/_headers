@@ -3,8 +3,8 @@ https://:project.pages.dev/*
 
 /*
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-  Link: <https://youronly.one>; rel="me", <https://im.youronly.one>; rel="me", <https://iam.youronly.one>; rel="me", <https://yelosan.youronly.one>; rel="publisher me", <https://indieauth.com/auth>; rel="indieauth-metadata authorization_endpoint", <https://webmention.io/im.youronly.one/webmention>; rel="webmention", <https://youronly.one/0xF2F9BE4C3D8E4F53.pub.asc>; rel="pgpkey", <https://semweb.youronly.one>; rel="project"
-  X-Pingback: https://webmention.io/im.youronly.one/xmlrpc
+  Link: <https://youronly.one>; rel="me", <https://im.youronly.one>; rel="me", <https://iam.youronly.one>; rel="me", <https://yelosan.youronly.one>; rel="publisher me", <https://indieauth.com/auth>; rel="indieauth-metadata authorization_endpoint", <https://webmention.io/semweb.youronly.one/webmention>; rel="webmention", <https://semweb.youronly.one>; rel="project"
+  X-Pingback: https://webmention.io/semweb.youronly.one/xmlrpc
   # X-DNS-Prefetch-Control: off
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
