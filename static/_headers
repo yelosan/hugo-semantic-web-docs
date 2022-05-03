@@ -3,6 +3,8 @@ https://:project.pages.dev/*
 
 /*
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+  Link: <https://youronly.one>; rel="me", <https://im.youronly.one>; rel="me", <https://iam.youronly.one>; rel="me", <https://yelosan.youronly.one>; rel="publisher me", <https://indieauth.com/auth>; rel="indieauth-metadata authorization_endpoint", <https://webmention.io/im.youronly.one/webmention>; rel="webmention", <https://youronly.one/0xF2F9BE4C3D8E4F53.pub.asc>; rel="pgpkey", <https://semweb.youronly.one>; rel="project"
+  X-Pingback: https://webmention.io/im.youronly.one/xmlrpc
   # X-DNS-Prefetch-Control: off
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
@@ -12,31 +14,18 @@ https://:project.pages.dev/*
   Vary: Upgrade-Insecure-Requests, Origin, Accept-Encoding
 
   ##############################################################################
-  ###                      Cross-Origin-Embedder-Policy                      ###
-  ###                                                                        ###
-  ### - require-coop                                                         ###
-  ###   - PREFERRED                                                          ###
-  ###   - if all third-party embeds are CORP/CORS enabled                    ###
-  ### - credentialless                                                       ###
-  ###   - proposal                                                           ###
-  ###   - https://developer.chrome.com/blog/coep-credentialless-origin-trial ###
-  ### - unsafe-none                                                          ###
-  ###   - default                                                            ###
-  ###   - some third-party resources not yet CORP/CORS enabled               ###
-  ##############################################################################
-  Cross-Origin-Embedder-Policy: unsafe-none; report-to="default"
-
-  ##############################################################################
   ###                       Cross-Origin-Opener-Policy                       ###
   ###                                                                        ###
   ### - same-origin                                                          ###
-  ###   - USE THIS ONLY                                                      ###
+  ###   - PREFERRED                                                          ###
   ###   - same as rel=noopener but larger scope                              ###
   ### - same-origin-allow-popups                                             ###
+  ###   - needed for OAuth like Disqus                                       ###
   ### - unsafe-none                                                          ###
   ###   - default                                                            ###
   ##############################################################################
-  Cross-Origin-Opener-Policy: same-origin; report-to="default"
+  Cross-Origin-Opener-Policy: same-origin-allow-popups; report-to="default"
+  #Cross-Origin-Opener-Policy: same-origin; report-to="default"
 
   ##############################################################################
   ###                      Cross-Origin-Resource-Policy                      ###
@@ -55,9 +44,23 @@ https://:project.pages.dev/*
   ##############################################################################
   Cross-Origin-Resource-Policy: cross-origin
 
+  ##############################################################################
+  ###                      Cross-Origin-Embedder-Policy                      ###
+  ###                                                                        ###
+  ### - require-coop                                                         ###
+  ###   - PREFERRED                                                          ###
+  ###   - if all third-party embeds are CORP/CORS enabled                    ###
+  ### - credentialless                                                       ###
+  ###   - proposal                                                           ###
+  ###   - https://developer.chrome.com/blog/coep-credentialless-origin-trial ###
+  ### - unsafe-none                                                          ###
+  ###   - default                                                            ###
+  ###   - some third-party resources not yet CORP/CORS enabled               ###
+  ##############################################################################
+  #Cross-Origin-Embedder-Policy: unsafe-none; report-to="default"
+  Cross-Origin-Embedder-Policy: require-coop; report-to="default"
+
   ### removed: require-trusted-types-for 'script'; ###
-  ### removed: script-src-elem 'self' 'report-sample' 'unsafe-inline' https:; script-src-attr 'self' 'report-sample' 'unsafe-inline' https:;  ###
-  ### removed: style-src-elem 'self' 'report-sample' 'unsafe-inline' https:; style-src-attr 'self' 'report-sample' 'unsafe-inline' https:; ###
   ### CSP moved to Cloudflare worker. _headers file has a 1000-character restriction per line. ###
   Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(self), display-capture=(self), document-domain=(), encrypted-media=*, execution-while-not-rendered=(), execution-while-out-of-viewport=*, fullscreen=(self), geolocation=(), gyroscope=(), keyboard-map=(self), magnetometer=(), microphone=(), midi=(), navigation-override=(self), payment=(), picture-in-picture=*, publickey-credentials-get=(self), screen-wake-lock=(), sync-xhr=(self), usb=(), web-share=(self), xr-spatial-tracking=(self), clipboard-read=(self), clipboard-write=(self), gamepad=(self), speaker-selection=(self), conversion-measurement=(self), focus-without-user-activation=(self), hid=(self), idle-detection=(self), serial=(self), trust-token-redemption=(self), browsing-topics=()
   Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://yelosan.report-uri.com/a/d/g"}],"include_subdomains":true}
