@@ -31,7 +31,7 @@ websubhubs = ["https://pubsubhubbub.appspot.com/", "https://youronlyone.superfee
   [semweb]
 		copyrightnotice = "Copyleft 🄯 CC-BY-SA 4.0 International by JC John Sese Cuneta"
 		credittext = "Semantic Web for Hugo (https://semweb.youronly.one)"
-		datefirstpublished = "2021-11-15"
+		datecreated = "2021-11-15"
 		license = "https://creativecommons.org/licenses/by-sa/4.0/"
 		publisher = "https://yelosan.youronly.one/"
 		sameas = ["https://github.com/YourOnly-One/hugo-semantic-web", "https://github.com/YourOnly-One/hugo-semantic-web-docs"]
