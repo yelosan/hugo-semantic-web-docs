@@ -7,4 +7,7 @@
   {{ $js = $js | fingerprint }}
 {{ end }}
 {{/* YourOnly.One: removed all 'integrity', it is failing in gh-pages */}}
-<script src="{{ $js.RelPermalink }}" defer></script>
+<script
+  src="{{ $js.RelPermalink }}"
+  {{ if hugo.IsProduction }}integrity="{{ $js.Data.Integrity }}"{{ end }}
+  defer></script>
