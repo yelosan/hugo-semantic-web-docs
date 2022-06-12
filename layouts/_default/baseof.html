@@ -50,7 +50,7 @@
       }
     </style>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cc-icons/cc-icons/css/cc-icons.min.css" media="all" type="text/css" crossorigin="anonymous" />
+    {{- /* <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cc-icons/cc-icons/css/cc-icons.min.css" media="all" type="text/css" crossorigin="anonymous" /> */ -}}
     <link href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license" />
     {{ $doccss := resources.Get "css/style.css" }}
     {{ $docstyle := $doccss | resources.Minify }}
@@ -184,7 +184,7 @@
           </div>
           */ -}}
           <div class="cc_icons txt_center">
-            <a href="https://creativecommons.org/licenses/by-sa/4.0/" aria-label="Content License: Creative Commons Attribution-ShareAlike 4.0 International" rel="license noopener external nofollow"><i style="text-decoration: none;" class="cc cc-cc cc-2x text-red" aria-hidden="true" title="Content License: Creative Commons Attribution-ShareAlike 4.0 International"></i> <i class="cc cc-by cc-2x text-green" aria-hidden="true" title="Content License: Creative Commons Attribution-ShareAlike 4.0 International"></i> <i class="cc cc-sa cc-2x text-blue" aria-hidden="true" title="Content License: Creative Commons Attribution-ShareAlike 4.0 International"></i></a>
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" aria-label="Content License: Creative Commons Attribution-ShareAlike 4.0 International" rel="license noopener external nofollow"><span class="ccicons xxlarge text-red" title="Creative Commons Attribution-ShareAlike 4.0 International License">&#x1F16D;</span> <span class="ccicons xxlarge text-green" title="Creative Commons Attribution-ShareAlike 4.0 International License">&#x1F16F;</span> <span class="ccicons xxlarge text-blue" title="Creative Commons Attribution-ShareAlike 4.0 International License">&#x1F10E;</span></a>
           </div>
           <div class="copyleft txt_center">
             {{ i18n "ContentOnBGN" }} <span xmlns:dct="https://purl.org/dc/terms/" property="dct:title"><b>{{ .Site.Title }}</b></span> {{ i18n "copyleft" }} &#x1F12F; {{ if eq now.Year .Site.Params.siteStartYear }}{{ now.Year }}{{ else }}{{ .Site.Params.siteStartYear }}–{{ now.Year }}{{ end }} <a xmlns:cc="https://creativecommons.org/ns#" href="https://youronly.one" property="cc:attributionName" rel="cc:attributionURL me noopener external">
