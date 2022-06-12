@@ -1,0 +1,30 @@
+﻿@font-face {
+  font-family: "cc-icons";
+  src:  local("cc-icons"),
+        local("creative_commons"),
+        url("../fonts/cc-icons-unicode.woff2") format("woff2"),
+        url("../fonts/cc-icons-unicode.woff") format("woff"),
+        url("../fonts/cc-icons-unicode.ttf") format("opentype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: normal;
+  unicode-range: U+229C, U+1F10D-1F10F, U+1F16D-1F16F;
+}
+
+.ccicons {
+  direction: ltr;
+  font-family: "cc-icons", "creative_commons";
+}
+
+.large {
+  font-size: large;
+}
+.xlarge {
+  font-size: x-large;
+}
+.xxlarge {
+  font-size: xx-large;
+}
+.larger {
+  font-size: larger;
+}
