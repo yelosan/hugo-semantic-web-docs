@@ -15,11 +15,12 @@
 vendor
 
 # Hugo
+config/development
+config/staging
 public
 resources
 _vendor
-config/development
-config/staging
+.hugo_build.lock
 go.mod
 go.sum
 
