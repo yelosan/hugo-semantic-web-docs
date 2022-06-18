@@ -1,0 +1,6 @@
+### See:
+# 1. https://journallist.net/reference-document-for-trust-txt-specifications
+###
+
+controlledby=https://yelosan.youronly.one/
+contact=https://im.youronly.one/p/contact-us/
