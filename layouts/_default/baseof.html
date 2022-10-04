@@ -88,7 +88,7 @@
   <body class="index" x-data="{ navOpen: false }" x-cloak>
     {{- with and (not .Site.IsServer) (.Site.Params.googleTagManager) -}}
       <!-- Google Tag Manager (noscript) -->
-      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ . }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <noscript><iframe anonymous src="https://www.googletagmanager.com/ns.html?id={{ . }}" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- End Google Tag Manager (noscript) -->
     {{- end -}}
     <a
