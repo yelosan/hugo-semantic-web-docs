@@ -60,7 +60,7 @@
     <link rel="stylesheet" href="{{ $docstyle.RelPermalink }}" media="all" type="{{ $docstyle.MediaType }}" />
     {{ $semwebcss := resources.Get "css/semweb-style.css" }}
     {{ $semwebstyle := $semwebcss | resources.Minify }}
-    <link rel="stylesheet" href="{{ $semwebstyle.RelPermalink }}" media="all" type="{{ $semwebstype.MediaType }}" />
+    <link rel="stylesheet" href="{{ $semwebstyle.RelPermalink }}" media="all" type="{{ $semwebstyle.MediaType }}" />
 
     {{- /* YourOnly.One: analytics */ -}}
       <!-- BGN: Microanalytics.io (privacy-first) -->
