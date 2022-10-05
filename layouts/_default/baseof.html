@@ -51,16 +51,16 @@
     </style>
 
     {{- $cciconscss := resources.Get "css/cc-icons.css" | minify | fingerprint "sha512" -}}
-    <link href="{{ $cciconscss.RelPermalink }}" integrity="{{ $cciconscss.Data.Integrity }}" crossorigin="anonymous" type="text/css" media="all" rel="stylesheet" />
+    <link href="{{ $cciconscss.RelPermalink }}" integrity="{{ $cciconscss.Data.Integrity }}" crossorigin="anonymous" type="{{ $cciconscss.MediaType }}" media="all" rel="stylesheet" />
     {{- /* <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/cc-icons/cc-icons/css/cc-icons.min.css" media="all" type="text/css" crossorigin="anonymous" /> */ -}}
 
     <link href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license" />
     {{ $doccss := resources.Get "css/style.css" }}
     {{ $docstyle := $doccss | resources.Minify }}
-    <link rel="stylesheet" href="{{ $docstyle.RelPermalink }}" media="all" type="text/css" />
+    <link rel="stylesheet" href="{{ $docstyle.RelPermalink }}" media="all" type="{{ $docstyle.MediaType }}" />
     {{ $semwebcss := resources.Get "css/semweb-style.css" }}
     {{ $semwebstyle := $semwebcss | resources.Minify }}
-    <link rel="stylesheet" href="{{ $semwebstyle.RelPermalink }}" media="all" type="text/css" />
+    <link rel="stylesheet" href="{{ $semwebstyle.RelPermalink }}" media="all" type="{{ $semwebstype.MediaType }}" />
 
     {{- /* YourOnly.One: analytics */ -}}
       <!-- BGN: Microanalytics.io (privacy-first) -->
