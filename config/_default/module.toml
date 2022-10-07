@@ -1,7 +1,7 @@
 [hugoVersion]
   extended = true
   #max = ""
-  min = "0.97.0"
+  min = "0.104.0"
 
 [[imports]]
   path = "gitlab.com/yelosan/hugo-semantic-web"
