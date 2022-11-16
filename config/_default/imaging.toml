@@ -2,7 +2,7 @@
 anchor = "Smart"                                  # default: Smart
 bgColor = "#ffffff"                               # default: #ffffff; if transparency is not supported
 hint = "photo"                                    # default: photo; WebP
-quality = 90                                      # default: 75; JPEG and WebP
+quality = 50                                      # default: 75; JPEG and WebP
 resampleFilter = "MitchellNetravali"              # default: Box
 
 # see: https://gohugo.io/content-management/image-processing/#exif-data
