@@ -2,6 +2,8 @@
 
 websubhubs = ["https://pubsubhubbub.appspot.com/", "https://youronlyone.superfeedr.com/", "https://pubsubhubbub.superfeedr.com/", "https://websubhub.com/hub"]
 
+#favicon_mstilecolor = ""
+
 ### BGN: Structured Data ###
 	siteStartYear = 2021
 
