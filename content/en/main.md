@@ -216,7 +216,7 @@ theme:
 
 > 2. Download the latest release [here](https://gitlab.com/yelosan/hugo-semantic-web/releases).
 
-> 3. Extract the file in your project's `/theme/` folder, it should be: `themes/hugo-semantic-web/`
+> 3. Extract the file in your project's `/themes/` folder, it should be: `themes/hugo-semantic-web/`
 
 > 4. Add this in `/layouts/_default/baseof.html` (or whichever is appropriate):
 
@@ -236,8 +236,8 @@ However, if this method best suits your workflow, you can follow the steps on th
 
 1. Check regularly the project's [repository](https://gitlab.com/yelosan/hugo-semantic-web) for updates.
 1. Download the latest release [here](https://gitlab.com/yelosan/hugo-semantic-web/releases).
-1. If you did not edit any of the **Semantic Web for Hugo** files, delete the `/hugo-semantic-web/` folder located in your project's `/theme/` folder.
-1. Extract the latest release in `/themess/hugo-semantic-web/`.
+1. If you did not modify any of the **Semantic Web for Hugo** files, delete the `/hugo-semantic-web/` folder located in your project's `/themes/` folder.
+1. Extract the latest release in `/themes/hugo-semantic-web/`.
 
 # Types
 
