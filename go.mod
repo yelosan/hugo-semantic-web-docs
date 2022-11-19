@@ -1,8 +1,8 @@
 module gitlab.com/yelosan/hugo-semantic-web-docs
 
-go 1.18
+go 1.19
 
 require (
-	github.com/bep/docuapi/v2 latest
-	gitlab.com/yelosan/hugo-semantic-web main
+  codeberg.org/yelosan/hugo-semantic-web main
+  github.com/bep/docuapi/v2 latest
 )
