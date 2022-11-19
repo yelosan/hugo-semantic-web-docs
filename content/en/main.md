@@ -14,11 +14,11 @@ videos = ["https://www.youtube.com/watch?v=OM6XIICm_qo", "https://vimeo.com/6010
 
 For this project, we chose to implement *Schema.org*'s Vocabulary by adding *JSON-LD* markup automatically. In areas where custom input is required, we took advantage of Hugo's shortcode feature.
 
-Latest version: [v1.1.2: Migration](https://gitlab.com/yelosan/hugo-semantic-web/-/releases/v1.1.2) released on 2022-04-02.
+Latest version: [v1.1.2: Migration](https://codeberg.org/yelosan/hugo-semantic-web/releases/v1.1.2) released on 2022-04-02.
 
 ## History
 
-- v1.1.2 "Migration" released on 2022-04-02; [changes](https://gitlab.com/yelosan/hugo-semantic-web/-/releases/v1.1.2)
+- v1.1.2 "Migration" released on 2022-04-02; [changes](https://codeberg.org/yelosan/hugo-semantic-web/releases/v1.1.2)
 - v1.1.1 No changes; only enabled Zenodo DOI integration for the project - 2021-12-10
 - v1.1.0 "ᜐᜎᜋᜆ᜔ (salamat)" released on 2021-11-15.
 - v1.0.0 "감사합니다 (gamsahabnida)" released on 2021-11-08.
@@ -46,13 +46,13 @@ These are the currently supported Schema.org Types:
 ```toml
 [module]
   [[module.imports]]
-    path = "gitlab.com/yelosan/hugo-semantic-web"
+    path = "codeberg.org/yelosan/hugo-semantic-web"
 ```
 
 ```yaml
 module:
   imports:
-    - path: gitlab.com/yelosan/hugo-semantic-web
+    - path: codeberg.org/yelosan/hugo-semantic-web
 ```
 
 ```json
@@ -60,7 +60,7 @@ module:
   "module": {
     "imports": [
       {
-        "path": "gitlab.com/yelosan/hugo-semantic-web"
+        "path": "codeberg.org/yelosan/hugo-semantic-web"
       }
     ]
   }
@@ -70,7 +70,7 @@ module:
 > 2. Initialize **Semantic Web for Hugo** module:
 
 ```shell
-hugo mod init gitlab.com/yelosan/hugo-semantic-web
+hugo mod init codeberg.org/yelosan/hugo-semantic-web
 ```
 
 > 3. Add this in `/layouts/_default/baseof.html` (or whichever is appropriate):
@@ -89,7 +89,7 @@ Follow the steps on the right (or below if viewing in mobile).
 
 ### To update
 
-To update the **Semantic Web for Hugo** module run this while in your project's root: `hugo mod get -u gitlab.com/yelosan/hugo-semantic-web`
+To update the **Semantic Web for Hugo** module run this while in your project's root: `hugo mod get -u codeberg.org/yelosan/hugo-semantic-web`
 
 ## git submodule method
 
@@ -117,7 +117,7 @@ theme:
 > 2. In your project's root folder:
 
 ```shell
-git submodule add https://gitlab.com/yelosan/hugo-semantic-web.git themes/hugo-semantic-web
+git submodule add https://codeberg.org/yelosan/hugo-semantic-web.git themes/hugo-semantic-web
 ```
 
 > 3. Then initialize the **Semantic Web for Hugo** submodule:
@@ -170,7 +170,7 @@ theme:
 > 2. In your project's root folder:
 
 ```shell
-git clone https://gitlab.com/yelosan/hugo-semantic-web.git themes/hugo-semantic-web
+git clone https://codeberg.org/yelosan/hugo-semantic-web.git themes/hugo-semantic-web
 ```
 
 > 3. Add this in `/layouts/_default/baseof.html` (or whichever is appropriate):
@@ -214,7 +214,7 @@ theme:
 }
 ```
 
-> 2. Download the latest release [here](https://gitlab.com/yelosan/hugo-semantic-web/releases).
+> 2. Download the latest release [here](https://codeberg.org/yelosan/hugo-semantic-web/releases).
 
 > 3. Extract the file in your project's `/themes/` folder, it should be: `themes/hugo-semantic-web/`
 
@@ -234,8 +234,8 @@ However, if this method best suits your workflow, you can follow the steps on th
 
 ### To update
 
-1. Check regularly the project's [repository](https://gitlab.com/yelosan/hugo-semantic-web) for updates.
-1. Download the latest release [here](https://gitlab.com/yelosan/hugo-semantic-web/releases).
+1. Check regularly the project's [repository](https://codeberg.org/yelosan/hugo-semantic-web) for updates.
+1. Download the latest release [here](https://codeberg.org/yelosan/hugo-semantic-web/releases).
 1. If you did not modify any of the **Semantic Web for Hugo** files, delete the `/hugo-semantic-web/` folder located in your project's `/themes/` folder.
 1. Extract the latest release in `/themes/hugo-semantic-web/`.
 
@@ -1501,7 +1501,7 @@ A Vimeo embed with Hugo's Privacy Config enabled.
 
 # Contribute
 
-You can contribute to the project via our GitLab: [https://gitlab.com/yelosan/hugo-semantic-web](https://gitlab.com/yelosan/hugo-semantic-web).
+You can contribute to the project via our GitLab: [https://codeberg.org/yelosan/hugo-semantic-web](https://codeberg.org/yelosan/hugo-semantic-web).
 
 You can also help with our documentation via our GitLab: [https://gitlab.com/yelosan/hugo-semantic-web-docs](https://gitlab.com/yelosan/hugo-semantic-web-docs).
 
@@ -1509,12 +1509,12 @@ You can also help with our documentation via our GitLab: [https://gitlab.com/yel
 
 ## Bugs and Suggestions
 
-Please file a bug report and suggest new features in our project's GitLab: [https://gitlab.com/yelosan/hugo-semantic-web/issues](https://gitlab.com/yelosan/hugo-semantic-web/issues).
+Please file a bug report and suggest new features in our project's GitLab: [https://codeberg.org/yelosan/hugo-semantic-web/issues](https://codeberg.org/yelosan/hugo-semantic-web/issues).
 
 <!-- NOTE: not available in GitLab
 ## Discuss
 
-If you want to discuss something or ask a question, you can do it in our project's GitLab: [https://gitlab.com/yelosan/hugo-semantic-web/discussions](https://gitlab.com/yelosan/hugo-semantic-web/discussions).
+If you want to discuss something or ask a question, you can do it in our project's repository: [https://codeberg.org/yelosan/hugo-semantic-web/issues](https://codeberg.org/yelosan/hugo-semantic-web/issues).
 -->
 
 ## Documentation
