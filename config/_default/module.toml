@@ -1,10 +1,10 @@
 [hugoVersion]
   extended = true
   #max = ""
-  min = "0.104.0"
+  min = "0.106.0"
 
 [[imports]]
-  path = "gitlab.com/yelosan/hugo-semantic-web"
+  path = "codeberg.org/yelosan/hugo-semantic-web"
 
 [[imports]]
   path = "github.com/bep/docuapi/v2"
