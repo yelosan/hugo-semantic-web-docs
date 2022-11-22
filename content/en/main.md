@@ -1509,7 +1509,7 @@ You can also help with our documentation via our GitLab repo: [https://gitlab.co
 
 ## Bugs and Suggestions
 
-Please file a bug report and suggest new features in our project's GitLab: [https://codeberg.org/yelosan/hugo-semantic-web/issues](https://codeberg.org/yelosan/hugo-semantic-web/issues).
+Please file a bug report and suggest new features in our project's Codeberg tracker: [https://codeberg.org/yelosan/hugo-semantic-web/issues](https://codeberg.org/yelosan/hugo-semantic-web/issues).
 
 <!-- NOTE: not available in GitLab
 ## Discuss
