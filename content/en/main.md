@@ -1501,9 +1501,9 @@ A Vimeo embed with Hugo's Privacy Config enabled.
 
 # Contribute
 
-You can contribute to the project via our GitLab: [https://codeberg.org/yelosan/hugo-semantic-web](https://codeberg.org/yelosan/hugo-semantic-web).
+You can contribute to the project via our Codeberg repo: [https://codeberg.org/yelosan/hugo-semantic-web](https://codeberg.org/yelosan/hugo-semantic-web).
 
-You can also help with our documentation via our GitLab: [https://gitlab.com/yelosan/hugo-semantic-web-docs](https://gitlab.com/yelosan/hugo-semantic-web-docs).
+You can also help with our documentation via our GitLab repo: [https://gitlab.com/yelosan/hugo-semantic-web-docs](https://gitlab.com/yelosan/hugo-semantic-web-docs).
 
 # Contact Us
 
@@ -1520,3 +1520,29 @@ If you want to discuss something or ask a question, you can do it in our project
 ## Documentation
 
 For documentation improvements, file it in our documentation GitLab: [https://gitlab.com/yelosan/hugo-semantic-web-docs/issues](https://gitlab.com/yelosan/hugo-semantic-web-docs/issues)
+
+---
+
+{{< image
+  type="imagecoverattrib"
+
+  isrepresentativeofpage=true
+
+  link="https://openclipart.org/detail/62191/semantic-social-network"
+  linkrel="noopener external"
+  thumbnailurl=""
+
+  title="Semantic Social Network"
+  caption=""
+  alt="Semantic Social Network"
+
+  datepublished="2010-05-23"
+
+  licensecode="publicdomain"
+  licenseurl="https://openclipart.org/share"
+  licensename=""
+
+  attribto="edycop"
+  attriburl="https://openclipart.org/artist/edycop"
+  attribrel="noopener external"
+>}}
