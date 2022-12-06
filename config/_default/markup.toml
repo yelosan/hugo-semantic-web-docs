@@ -27,6 +27,7 @@ defaultMarkdownHandler = "goldmark"                               # default: gol
   [goldmark.parser]
     autoHeadingID = true                                          # default: true
     autoHeadingIDType = "github"                                  # default: github
+    wrapStandAloneImageWithinParagraph = false                     # default: true
     [goldmark.parser.attribute]
       block = true                                               # default: false; keep true to use attributes in block type markdown
       title = true                                                # default: true
