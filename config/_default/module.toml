@@ -1,3 +1,5 @@
+workspace = "off"
+
 [[imports]]
   path = "codeberg.org/yelosan/hugo-semantic-web"
 
