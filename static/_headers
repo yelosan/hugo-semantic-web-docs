@@ -1,8 +1,55 @@
 https://:project.pages.dev/*
   X-Robots-Tag: noindex, follow
 
-/*
+https://youronly.one/*
   X-Robots-Tag: all, index, follow
+
+https://confidentraveler.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://faithfulathlete.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://iam.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://images.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://im.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://love.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://p.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://rsc.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://semweb.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://snoworld.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://techmagus.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://way.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://yelosan.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://yugenbard.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+https://yuki.youronly.one/*
+  X-Robots-Tag: all, index, follow
+
+/*
   Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
   Link: <https://youronly.one>; rel="me openid.delegate", <https://im.youronly.one>; rel="me openid.delegate", <https://iam.youronly.one>; rel="me openid.delegate", <https://yelosan.youronly.one>; rel="publisher me", <https://indieauth.com/auth>; rel="indieauth-metadata authorization_endpoint", <https://webmention.io/im.youronly.one/webmention>; rel="webmention", <https://openid.indieauth.com/openid>; rel="openid.server", <https://pubsubhubbub.appspot.com/>; rel="hub", <https://websubhub.com/hub>; rel="hub", <https://youronlyone.superfeedr.com/>; rel="hub", <https://pubsubhubbub.superfeedr.com/>; rel="hub", <https://youronly.one/0xF2F9BE4C3D8E4F53.pub.asc>; rel="pgpkey", <https://semweb.youronly.one>; rel="project"
   X-Pingback: https://webmention.io/im.youronly.one/xmlrpc
