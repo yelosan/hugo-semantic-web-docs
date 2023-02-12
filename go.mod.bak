@@ -1,4 +1,4 @@
-module gitlab.com/yelosan/hugo-semantic-web-docs
+module codeberg.org/yelosan/hugo-semantic-web-docs
 
 go 1.19
 
