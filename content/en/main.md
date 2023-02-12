@@ -1466,7 +1466,7 @@ A Vimeo embed with Hugo's Privacy Config enabled.
   linkrel="noopener external"
 
   title="The Wild: Capturing Our Planet in Dolby Vision"
-  caption="The Wild is a short film inspired by the idea that we need to co-exist and protect nature. It’s Noah Beschen's journey through our beautiful world captured and shared with the crisp clarity and vibrancy of Dolby Vision. Because every moment should look like this."
+  caption="The Wild is a short film inspired by the idea that we need to co-exist and protect nature. It's Noah Beschen's journey through our beautiful world captured and shared with the crisp clarity and vibrancy of Dolby Vision. Because every moment should look like this."
   inlanguage="en"
 
   datepublished="2021-09-09"
@@ -1487,7 +1487,7 @@ A Vimeo embed with Hugo's Privacy Config enabled.
   linkrel="noopener external"
 
   title="The Wild: Capturing Our Planet in Dolby Vision"
-  caption="The Wild is a short film inspired by the idea that we need to co-exist and protect nature. It’s Noah Beschen's journey through our beautiful world captured and shared with the crisp clarity and vibrancy of Dolby Vision. Because every moment should look like this."
+  caption="The Wild is a short film inspired by the idea that we need to co-exist and protect nature. It's Noah Beschen's journey through our beautiful world captured and shared with the crisp clarity and vibrancy of Dolby Vision. Because every moment should look like this."
   inlanguage="en"
 
   datepublished="2021-09-09"
