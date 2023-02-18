@@ -1,36 +1,39 @@
-####### See: https://gohugo.io/getting-started/configuration/#configure-minify #######
-disableCSS = false																			# default: false
-disableHTML = false																			# default: false; should be true to keep the casing of hreflang
-disableJS = false																				# default: false
-disableJSON = false																			# default: false
-disableSVG = false																			# default: false
-disableXML = false																			# default: false
-minifyOutput = true																		# default: false
+# See: https://gohugo.io/getting-started/configuration/#configure-minify
+
+disableCSS = true                              # default: false
+disableHTML = false                             # default: false; set to true if you want to keep the case of hreflang
+disableJS = false                               # default: false
+disableJSON = false                             # default: false
+disableSVG = false                              # default: false
+disableXML = false                              # default: false
+minifyOutput = true                            # default: false
 
 [tdewolff]
-	[tdewolff.css]
-		keepCSS2 = false																			# default: true
-		precision = 0																				# default: 0
+  [tdewolff.css]
+    keepCSS2 = false                             # default: true
+    precision = 0                               # default: 0
 
-	[tdewolff.html]
-		keepComments = false																# default: false
-		keepConditionalComments = false											# default: true
-		keepDefaultAttrVals = true													# default: true
-		keepDocumentTags = true															# default: true
-		keepEndTags = true																	# default: true
-		keepQuotes = true																	# default: false
-		keepWhitespace = false																# default: true
+  [tdewolff.html]
+    keepComments = false                        # default: false
+    keepConditionalComments = false              # default: true
+    keepDefaultAttrVals = true                  # default: true
+    keepDocumentTags = true                     # default: true
+    keepEndTags = true                          # default: true
+    keepQuotes = true                          # default: false; keep true to avoid surprise errors
+    keepWhitespace = false                       # default: true
 
-	[tdewolff.js]
-		keepVarNames = false																# default: false
-		precision = 0																				# default: 0
+  [tdewolff.js]
+    keepVarNames = true                        # default: false; true to make it easier to debug
+    noNullishOperator = false                   # default: false
+    precision = 0                               # default: 0
 
-	[tdewolff.json]
-		keepNumbers = false																	# default: false
-		precision = 0																				# default: 0
+  [tdewolff.json]
+    keepNumbers = true                         # default: false; true to make it easier to read
+    precision = 0                               # default: 0
 
-	[tdewolff.svg]
-		precision = 0																				# default: 0
+  [tdewolff.svg]
+    keepComments = false                        # default: false
+    precision = 0                               # default: 0
 
-	[tdewolff.xml]
-		keepWhitespace = false															# default: false
+  [tdewolff.xml]
+    keepWhitespace = false                      # default: false
