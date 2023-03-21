@@ -14,7 +14,7 @@
 
   #### Other settings ####
     #disqusShortname = "youronlyone"                       # .Site.DisqusShortname
-    #googleAnalytics = ""                     # .Site.GoogleAnalytics; we are using GoogleTagManager
+    #googleAnalytics = ""                     # .Site.GoogleAnalytics
 
 
 
