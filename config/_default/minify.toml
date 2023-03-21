@@ -1,6 +1,7 @@
 # See: https://gohugo.io/getting-started/configuration/#configure-minify
+# Also: https://github.com/tdewolff/minify
 
-disableCSS = true                              # default: false
+disableCSS = false                              # default: false
 disableHTML = false                             # default: false; set to true if you want to keep the case of hreflang
 disableJS = false                               # default: false
 disableJSON = false                             # default: false
@@ -10,30 +11,30 @@ minifyOutput = true                            # default: false
 
 [tdewolff]
   [tdewolff.css]
-    keepCSS2 = false                             # default: true
-    precision = 0                               # default: 0
+    keepCSS2 = false                             # default: true (prohibits using CSS3 syntax (such as exponents in numbers, or rgba( → rgb(), might be incomplete)
+    precision = 0                               # default: 0 (number of significant digits to preserve for numbers, 0 means no trimming)
 
   [tdewolff.html]
     keepComments = false                        # default: false
-    keepConditionalComments = false              # default: true
-    keepDefaultAttrVals = true                  # default: true
-    keepDocumentTags = true                     # default: true
+    keepConditionalComments = false              # default: true (preserve all IE conditional comments such as <!--[if IE 6]><![endif]--> and <![if IE 6]><![endif]>)
+    keepDefaultAttrVals = true                  # default: true (preserve default attribute values such as <script type="application/javascript">)
+    keepDocumentTags = true                     # default: true (preserve html, head and body tags)
     keepEndTags = true                          # default: true
     keepQuotes = true                          # default: false; keep true to avoid surprise errors
-    keepWhitespace = false                       # default: true
+    keepWhitespace = false                       # default: false
 
   [tdewolff.js]
     keepVarNames = true                        # default: false; true to make it easier to debug
     noNullishOperator = false                   # default: false
-    precision = 0                               # default: 0
+    precision = 0                               # default: 0 (number of significant digits to preserve for numbers, 0 means no trimming)
 
   [tdewolff.json]
     keepNumbers = true                         # default: false; true to make it easier to read
-    precision = 0                               # default: 0
+    precision = 0                               # default: 0 (number of significant digits to preserve for numbers, 0 means no trimming)
 
   [tdewolff.svg]
     keepComments = false                        # default: false
-    precision = 0                               # default: 0
+    precision = 0                               # default: 0 (number of significant digits to preserve for numbers, 0 means no trimming)
 
   [tdewolff.xml]
     keepWhitespace = false                      # default: false
