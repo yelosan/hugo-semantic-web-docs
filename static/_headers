@@ -105,7 +105,6 @@ https://yuki.youronly.one/*
   #Cross-Origin-Embedder-Policy: credentialless; report-to="default"
   Cross-Origin-Embedder-Policy: unsafe-none; report-to="default"
 
-  ### removed: require-trusted-types-for 'script'; ###
   ### CSP moved to Cloudflare worker. _headers file has a 1000-character restriction per line. ###
   Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(self), display-capture=(self), document-domain=(), encrypted-media=*, execution-while-not-rendered=(), execution-while-out-of-viewport=*, fullscreen=(self), geolocation=(), gyroscope=(), keyboard-map=(self), magnetometer=(), microphone=(), midi=(), navigation-override=(self), payment=(), picture-in-picture=*, publickey-credentials-get=(self), screen-wake-lock=(), sync-xhr=(self), usb=(), web-share=(self), xr-spatial-tracking=(self), clipboard-read=(self), clipboard-write=(self), gamepad=(self), speaker-selection=(self), conversion-measurement=(self), focus-without-user-activation=(self), hid=(self), idle-detection=(self), serial=(self), trust-token-redemption=(self), browsing-topics=()
   Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://yelosan.report-uri.com/a/d/g"}],"include_subdomains":true}
