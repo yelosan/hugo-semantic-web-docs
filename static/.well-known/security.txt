@@ -1,0 +1,38 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+### See:
+# 1. https://www.rfc-editor.org/rfc/rfc9116.html
+# 2. https://securitytxt.org
+# 3. https://en.wikipedia.org/wiki/Security.txt
+###
+
+# Contact: e2ee by default (in order of preference)
+Contact: https://keybase.io/yukino
+Contact: https://matrix.to/#/@youronlyone:matrix.org
+
+# Contact: non-e2ee (in order of preference)
+Contact: https://im.youronly.one/p/contact-us/
+Contact: https://twitter.com/messages/compose?recipient_id=701940572227923968
+Contact: https://c.im/@YourOnlyOne
+
+# Expiration
+Expires: 2025-12-31T23:59:59.000Z
+
+# Encryption
+Encryption: https://im.youronly.one/0xF2F9BE4C3D8E4F53.pub.asc
+Encryption: https://keybase.io/yukino
+Encryption: https://keyoxide.org/989EB937BDF4A5CD65470204F2F9BE4C3D8E4F53
+
+# Languages
+Preferred-Languages: en, fil, tl
+
+# Canonical
+Canonical: https://im.youronly.one/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iI4EARYKADYWIQT8KuNEQVQt8pzwXZA2XpOKztuK1QUCZB0GkhgYaGtwczovL2tl
+eXMub3BlbnBncC5vcmcACgkQNl6Tis7bitVcGwEAgxbVWf6kViJrbWzRStLN6A4M
+uBbdHNRNJu7CiGJa89kA/1/t4uKSp6Dz2ccb+r21gzQy2N4UHY0wzvwEUtH3WegM
+=ds96
+-----END PGP SIGNATURE-----
