@@ -1,4 +1,4 @@
-### See: https://gohugo.io/about/hugo-and-gdpr/
+# See: https://gohugo.io/about/hugo-and-gdpr/
 
 [disqus]
   disable = false
@@ -10,11 +10,11 @@
   useSessionStorage = true
 
 [instagram]
-  disable = false
+  disable = true
   simple = true
 
 [twitter]
-  disable = false
+  disable = true
   enableDNT = true
   simple = true
 
