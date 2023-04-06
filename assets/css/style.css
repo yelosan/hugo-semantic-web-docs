@@ -46,6 +46,209 @@
 /*************************
 ** BGN: Global Settings **
 *************************/
+  :root {
+    /* BLACK */
+      --color-black-bg: hwb(0 100% 0% / 0.5);
+      --color-black-bg: lch(100% 0 139.088 / 0.5);
+      --color-black-bg: oklch(100% 0 0 / 0.5);
+      --color-black: hwb(0 100% 0%);
+      --color-black: lch(100% 0 139.088);
+      --color-black: oklch(100% 0 0);
+
+    /* GREY LIGHT */
+      --color-grey-light-bg: hwb(0 83% 17% / 0.5);
+      --color-grey-light-bg: lch(84.556% 0 139.088 / 0.5);
+      --color-grey-light-bg: oklch(86.69% 0 0 / 0.5);
+      --color-grey-light: hwb(0 83% 17%);
+      --color-grey-light: lch(84.556% 0 139.088);
+      --color-grey-light: oklch(86.69% 0 0);
+
+    /* SILVER */
+      --color-silver-bg: hwb(0 75% 25% / 0.5);
+      --color-silver-bg: lch(77.704% 0 139.088 / 0.5);
+      --color-silver-bg: oklch(80.78% 0 0 / 0.5);
+      --color-silver: hwb(0 75% 25%);
+      --color-silver: lch(77.704% 0 139.088);
+      --color-silver: oklch(80.78% 0 0);
+
+    /* WHITE */
+      --color-white-bg: hwb(0 0% 100% / 0.5);
+      --color-white-bg: lch(0% 0 0 / 0.5);
+      --color-white-bg: oklch(0% 0 0 / 0.5);
+      --color-white: hwb(0 0% 100%);
+      --color-white: lch(0% 0 0);
+      --color-white: oklch(0% 0 0);
+
+    /* RED */
+      --color-red-bg: hwb(0 0% 0% / 0.5);
+      --color-red-bg: lch(54.291% 106.83719104365966 40.85766878213079 / 0.5);
+      --color-red-bg: oklch(62.8% 0.25768330773615683 29.2338851923426 / 0.5);
+      --color-red: hwb(0 0% 0%);
+      --color-red: lch(54.291% 106.83719104365966 40.85766878213079);
+      --color-red: oklch(62.8% 0.25768330773615683 29.2338851923426);
+
+    /* LIME */
+      --color-lime-bg: hwb(120 0% 0% / 0.5);
+      --color-lime-bg: lch(87.819% 113.32 134.38 / 0.5);
+      --color-lime-bg: oklch(86.64% 0.2948272403370167 142.49533888780996 / 0.5);
+      --color-lime: hwb(120 0% 0%);
+      --color-lime: lch(87.819% 113.32 134.38);
+      --color-lime: oklch(86.64% 0.2948272403370167 142.49533888780996);
+
+    /* GREEN */
+      --color-green-bg: hwb(120 0% 50% / 0.5);
+      --color-green-bg: lch(46.278% 67.984 134.384 / 0.5);
+      --color-green-bg: oklch(51.98% 0.17685825418032033 142.49533888780994 / 0.5);
+      --color-green: hwb(120 0% 50%);
+      --color-green: lch(46.278% 67.984 134.384);
+      --color-green: oklch(51.98% 0.17685825418032033 142.49533888780994);
+
+    /* BLUE */
+      --color-blue-bg: hwb(240 0% 0% / 0.5);
+      --color-blue-bg: lch(29.568% 131.1854613942089 301.36428148973533 / 0.5);
+      --color-blue-bg: oklch(45.2% 0.31321437166460125 264.052020638055 / 0.5);
+      --color-blue: hwb(240 0% 0%);
+      --color-blue: lch(29.568% 131.1854613942089 301.36428148973533);
+      --color-blue: oklch(45.2% 0.31321437166460125 264.052020638055);
+
+    /* INDIGO DYE*/
+      --color-indigo-dye-bg: hwb(203.208 0% 58% / 0.5);
+      --color-indigo-dye-bg: lch(25.753% 30.080379743730905 259.49712579751815 / 0.5);
+      --color-indigo-dye-bg: oklch(36.26% 0.091 244.97 / 0.5);
+      --color-indigo-dye: hwb(203.208 0% 58%);
+      --color-indigo-dye: lch(25.753% 30.080379743730905 259.49712579751815);
+      --color-indigo-dye: oklch(36.26% 0.091 244.97);
+
+    /* BLUE MIDNIGHT */
+      --color-blue-midnight-bg: hwb(240 10% 56% / 0.5);
+      --color-blue-midnight-bg: lch(14.929% 57.139 297.016 / 0.5);
+      --color-blue-midnight-bg: oklch(28.81% 0.144 272.76 / 0.5);
+      --color-blue-midnight: hwb(240 10% 56%);
+      --color-blue-midnight: lch(14.929% 57.139 297.016);
+      --color-blue-midnight: oklch(28.81% 0.144 272.76);
+
+    /* AQUA / CYAN */
+      --color-cyan-bg: hwb(180 0% 0% / 0.5);
+      --color-cyan-bg: lch(90.666% 52.81982158149982 196.45478245011327 / 0.5);
+      --color-cyan-bg: oklch(90.54% 0.15455001106436891 194.76894793196382 / 0.5);
+      --color-cyan: hwb(180 0% 0%);
+      --color-cyan: lch(90.666% 52.81982158149982 196.45478245011327);
+      --color-cyan: oklch(90.54% 0.15455001106436891 194.76894793196382);
+
+    /* FUCHSIA / MAGENTA */
+      --color-magenta-bg: hwb(300 0% 0% / 0.5);
+      --color-magenta-bg: lch(60.169% 111.38659434373716 327.1054738802461 / 0.5);
+      --color-magenta-bg: oklch(70.17% 0.322 328.36 / 0.5);
+      --color-magenta: hwb(300 0% 0%);
+      --color-magenta: lch(60.169% 111.38659434373716 327.1054738802461);
+      --color-magenta: oklch(70.17% 0.322 328.36);
+
+    /* YELLOW */
+      --color-yellow-bg: hwb(60 0% 0% / 0.5);
+      --color-yellow-bg: lch(97.607% 94.712 99.57226374240976 / 0.5);
+      --color-yellow-bg: oklch(96.8% 0.21100590772552355 109.76923207652125 / 0.5);
+      --color-yellow: hwb(60 0% 0%);
+      --color-yellow: lch(97.607% 94.712 99.57226374240976);
+      --color-yellow: oklch(96.8% 0.21100590772552355 109.76923207652125);
+
+    /* ORANGE */
+      --color-orange-bg: hwb(38.824 0% 0% / 0.5);
+      --color-orange-bg: lch(75.59% 83.7587948421583 70.82367779707081 / 0.5);
+      --color-orange-bg: oklch(79.27% 0.171 70.67 / 0.5);
+      --color-orange: hwb(38.824 0% 0%);
+      --color-orange: lch(75.59% 83.7587948421583 70.82367779707081);
+      --color-orange: oklch(79.27% 0.171 70.67);
+
+    /* GOLD */
+      --color-gold-bg: hwb(50.588 0% 0% / 0.5);
+      --color-gold-bg: lch(87.468% 86.59103759455243 88.07454203103275 / 0.5);
+      --color-gold-bg: oklch(88.68% 0.182 95.33 / 0.5);
+      --color-gold: hwb(50.588 0% 0%);
+      --color-gold: lch(87.468% 86.59103759455243 88.07454203103275);
+      --color-gold: oklch(88.68% 0.182 95.33);
+
+    /* PINK */
+      --color-pink-bg: hwb(349.524 75% 0% / 0.5);
+      --color-pink-bg: lch(83.787% 24.724253984206204 8.745997286616099 / 0.5);
+      --color-pink-bg: oklch(86.77% 0.07354199863627744 7.08551427339547 / 0.5);
+      --color-pink: hwb(349.524 75% 0%);
+      --color-pink: lch(83.787% 24.724253984206204 8.745997286616099);
+      --color-pink: oklch(86.77% 0.07354199863627744 7.08551427339547);
+
+    /* BROWN */
+      --color-brown-bg: hwb(26 39% 31% / 0.5);
+      --color-brown-bg: lch(59.04% 27.83 60.49 / 0.5);
+      --color-brown-bg: oklch(64.89% 0.07 58.55 / 0.5);
+      --color-brown: hwb(26 39% 31%);
+      --color-brown: lch(59.04% 27.83 60.49);
+      --color-brown: oklch(64.89% 0.07 58.55);
+
+    /* BROWN MEDIUM DARK */
+      --color-brown-medium-dark-bg: hwb(27 34% 32% / 0.5);
+      --color-brown-medium-dark-bg: lch(56.91% 33.11 61.54 / 0.5);
+      --color-brown-medium-dark-bg: oklch(63.08% 0.081 59.89 / 0.5);
+      --color-brown-medium-dark: hwb(27 34% 32%);
+      --color-brown-medium-dark: lch(56.91% 33.11 61.54);
+      --color-brown-medium-dark: oklch(63.08% 0.081 59.89);
+
+    /* FACEBOOK */
+      --color-facebook-bg: hwb(220 26% 30% / 0.5);
+      --color-facebook-bg: lch(43.93% 45.04 276.51 / 0.5);
+      --color-facebook-bg: oklch(52.56% 0.126 262.79 / 0.5);
+      --color-facebook: hwb(220 26% 30%);
+      --color-facebook: lch(43.93% 45.04 276.51);
+      --color-facebook: oklch(52.56% 0.126 262.79);
+
+    /* TWITTER */
+      --color-twitter-bg: hwb(203 11% 13% / 0.5);
+      --color-twitter-bg: lch(57.88% 48.94 256.6 / 0.5);
+      --color-twitter-bg: oklch(64.02% 0.148 243.45 / 0.5);
+      --color-twitter: hwb(203 11% 13%);
+      --color-twitter: lch(57.88% 48.94 256.6);
+      --color-twitter: oklch(64.02% 0.148 243.45);
+
+    /* GOOGLEPLUS */
+      --color-googleplus-bg: hwb(5 22% 14% / 0.5);
+      --color-googleplus-bg: lch(52.25% 71.66 35.83 / 0.5);
+      --color-googleplus-bg: oklch(60.38% 0.187 28.96 / 0.5);
+      --color-googleplus: hwb(5 22% 14%);
+      --color-googleplus: lch(52.25% 71.66 35.83);
+      --color-googleplus: oklch(60.38% 0.187 28.96);
+
+    /* UBUNTU */
+      --color-ubuntu-bg: hwb(16 13% 9% / 0.5);
+      --color-ubuntu-bg: lch(56.93% 81.53 46.27 / 0.5);
+      --color-ubuntu-bg: oklch(64.26% 0.193 38.26 / 0.5);
+      --color-ubuntu: hwb(16 13% 9%);
+      --color-ubuntu: lch(56.93% 81.53 46.27);
+      --color-ubuntu: oklch(64.26% 0.193 38.26);
+
+    /* MASTODON */
+      --color-mastodon-bg: hwb(205 17% 14% / 0.5);
+      --color-mastodon-bg: lch(57.02% 47.26 257.96 / 0.5);
+      --color-mastodon-bg: oklch(63.31% 0.142 245.03 / 0.5);
+      --color-mastodon: hwb(205 17% 14%);
+      --color-mastodon: lch(57.02% 47.26 257.96);
+      --color-mastodon: oklch(63.31% 0.142 245.03);
+
+    /* HUBZILLA */
+      --color-hubzilla-bg: hwb(236 26% 46% / 0.5);
+      --color-hubzilla-bg: lch(32.44% 40.76 289 / 0.5);
+      --color-hubzilla-bg: oklch(42.87% 0.109 277.68 / 0.5);
+      --color-hubzilla: hwb(236 26% 46%);
+      --color-hubzilla: lch(32.44% 40.76 289);
+      --color-hubzilla: oklch(42.87% 0.109 277.68);
+
+    /* CGM */
+      --color-cgm-bg: hwb(240 50% 0% / 0.5);
+      --color-cgm-bg: lch(58.2% 69.76218893179288 291.8265434122234 / 0.5);
+      --color-cgm-bg: oklch(66.01% 0.184 280.08 / 0.5);
+      --color-cgm: hwb(240 50% 0%);
+      --color-cgm: lch(58.2% 69.76218893179288 291.8265434122234);
+      --color-cgm: oklch(66.01% 0.184 280.08);
+
+  }
+
   :root, html, * {
     -webkit-hyphens: none;
         -ms-hyphens: none;
@@ -285,96 +488,79 @@
   **/
   /* BGN: Generic colours */
     .text-black {
-      color: hsla(0deg, 0%, 0%, 100%);
-      color: hwb(0deg 0% 100% / 100%);
+      color: var(--color-black);
     }
     .text-white {
-      color: hsla(0deg, 0%, 100%, 100%);
-      color: hwb(0deg 100% 0% / 100%);
+      color: var(--color-white);
     }
     .text-red {
-      color: hsla(0deg, 100%, 50%, 100%);
-      color: hwb(0deg 0% 0% / 100%);
+      color: var(--color-red);
     }
     .text-lime {
-      color: hsla(120deg, 100%, 50%, 100%);
-      color: hwb(120deg 0% 0% / 100%);
+      color: var(--color-lime);
     }
     .text-green {
-      color: hsla(120deg, 100%, 25%, 100%);
-      color: hwb(120deg 0% 50% / 100%);
+      color: var(--color-green);
     }
     .text-blue {
-      color: hsla(240deg, 100%, 50%, 100%);
-      color: hwb(240deg 0% 0% / 100%);
+      color: var(--color-blue);
     }
     .text-aqua,
     .text-cyan {
-      color: hsla(180deg, 100%, 50%, 100%);
-      color: hwb(180deg 0% 0% / 100%);
+      color: var(--color-cyan);
     }
     .text-fuchsia,
     .text-magenta {
-      color: hsla(300deg, 100%, 50%, 100%);
-      color: hwb(300deg 0% 0% / 100%);
+      color: var(--color-magenta);
     }
     .text-yellow {
-      color: hsla(60deg, 100%, 50%, 100%);
-      color: hwb(60deg 0% 0% / 100%);
+      color: var(--color-yellow);
     }
     .text-orange {
-      color: hsla(39deg, 100%, 50%, 100%);
-      color: hwb(39deg 0% 0% / 100%);
+      color: var(--color-orange);
     }
     .text-gold {
-      color: hsla(51deg, 100%, 50%, 100%);
-      color: hwb(51deg 0% 0% / 100%);
+      color: var(--color-gold);
     }
     .text-pink {
-      color: hsla(350deg, 100%, 88%, 100%);
-      color: hwb(350deg 75% 0% / 100%);
+      color: var(--color-pink);
     }
     .text-brown {
-      color: hsla(26deg, 32%, 54%, 100%);
-      color: hwb(26deg 39% 31% / 100%);
+      color: var(--color-brown);
     }
-    .text-brown {
-      color: hsla(27deg, 35%, 51%, 100%);
-      color: hwb(27deg 34% 31% / 100%);
+    .text-mediumdarkbrown {
+      color: var(--color-brown-medium-dark);
     }
   /* END: Generic colours */
 
   /* BGN: Brand colours */
     .text-facebook {
-      color: hsla(220deg, 46%, 48%, 100%);
-      color: hwb(220deg 26% 30% / 100%);
+      color: var(--color-facebook);
     }
     .text-twitter {
-      color: hsla(203deg, 78%, 49%, 100%);
-      color: hwb(203deg 11% 12% / 100%);
+      color: var(--color-twitter);
     }
     .text-googleplus {
-      color: hsla(5deg, 69%, 54%, 100%);
-      color: hwb(5deg 22% 14% / 100%);
+      color: var(--color-googleplus);
     }
     .text-ubuntu {
-      color: hsla(16deg, 82%, 52%, 100%);
-      color: hwb(16deg 13% 9% / 100%);
+      color: var(--color-ubuntu);
     }
     .text-mastodon {
-      color: hsla(205deg, 70%, 51%, 100%);
-      color: hwb(205deg 17% 15% / 100%);
+      color: var(--color-mastodon);
     }
     .text-hubzilla {
-      color: hsla(236deg, 35%, 40%, 100%);
-      color: hwb(236deg 26% 46% / 100%);
+      color: var(--color-hubzilla);
     }
   /* END: Brand colours */
 
   /* BGN: Special custom colours */
     .text-cm, .text-gm, .text-cgm {
-      color: hsla(210deg, 100%, 50%, 100%);
-      color: hwb(210deg 0% 0% / 100%);
+      color: var(--color-cgm);
+      font-weight: bold;
+    }
+    .text-guide {
+      color: var(--color-red);
       font-weight: bold;
     }
   /* END: Special custom colours */
