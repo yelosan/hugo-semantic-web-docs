@@ -1,6 +1,6 @@
 module codeberg.org/yelosan/hugo-semantic-web-docs
 
-go 1.19
+go 1.20
 
 require (
   codeberg.org/yelosan/hugo-semantic-web main
