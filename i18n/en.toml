@@ -143,13 +143,13 @@
 
 # BGN: SemWeb footer
   [githubproject]
-    other = "Project (GitHub)"
+    other = "Project (Codeberg)"
   [discussion]
     other = "Discussion"
   [issues]
     other = "File an Issue"
   [githubdocs]
-    other = "Documentation (GitHub)"
+    other = "Documentation (Codeberg)"
 # END: SemWeb footer
 
 # BGN: Social services
