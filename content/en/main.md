@@ -14,11 +14,12 @@ videos = ["https://www.youtube.com/watch?v=OM6XIICm_qo", "https://vimeo.com/6010
 
 For this project, we chose to implement *Schema.org*'s Vocabulary by adding *JSON-LD* markup automatically. In areas where custom input is required, we took advantage of Hugo's shortcode feature.
 
-Latest version: [v1.1.2: Migration](https://codeberg.org/yelosan/hugo-semantic-web/releases/v1.1.2) released on 2022-04-02.
+Latest version: [v1.1.3: codeberg migration](https://codeberg.org/yelosan/hugo-semantic-web/releases/tag/v1.1.3) released on 2022-12-31.
 
 ## History
 
-- v1.1.2 "Migration" released on 2022-04-02; [changes](https://codeberg.org/yelosan/hugo-semantic-web/releases/v1.1.2)
+- v1.1.3 "codeberg migration" releeased on 2022-12-31; [changes](https://codeberg.org/yelosan/hugo-semantic-web/releases/tag/v1.1.3)
+- v1.1.2 "Migration" released on 2022-04-02; [changes](https://codeberg.org/yelosan/hugo-semantic-web/releases/tag/v1.1.2)
 - v1.1.1 No changes; only enabled Zenodo DOI integration for the project - 2021-12-10
 - v1.1.0 "ᜐᜎᜋᜆ᜔ (salamat)" released on 2021-11-15.
 - v1.0.0 "감사합니다 (gamsahabnida)" released on 2021-11-08.
@@ -41,7 +42,13 @@ These are the currently supported Schema.org Types:
 
 ## Hugo module method
 
-> 1. In your `config` file add the following:
+> 1. Initialize your project as a module:
+
+```shell
+hugo mod init your-site-name-or-link-to-repo
+```
+
+> 2. In your `hugo` config file add the following:
 
 ```toml
 [module]
@@ -67,13 +74,13 @@ module:
 }
 ```
 
-> 2. Initialize **Semantic Web for Hugo** module:
+> 3. Download Hugo Semantic Web module
 
 ```shell
-hugo mod init codeberg.org/yelosan/hugo-semantic-web
+hugo mod get codeberg.org/yelosan/hugo-semantic-web
 ```
 
-> 3. Add this in `/layouts/_default/baseof.html` (or whichever is appropriate):
+> 4. Add this in `/layouts/_default/baseof.html` (or whichever is appropriate):
 
 ```go-html-template
 {{ $semwebcss := resources.Get "css/semweb-style.css" }}
@@ -81,7 +88,7 @@ hugo mod init codeberg.org/yelosan/hugo-semantic-web
 <link rel="stylesheet" href="{{ $semwebstyle.RelPermalink }}" media="all" type="text/css" />
 ```
 
-> 4. Proceed to the next [step](#types).
+> 5. Proceed to the next [step](#types).
 
 We recommend installing the **Semantic Web for Hugo** project by taking advantage of the *Hugo module* feature. This method ensures your project will always use the latest release of **Semantic Web for Hugo**.
 
@@ -1503,7 +1510,7 @@ A Vimeo embed with Hugo's Privacy Config enabled.
 
 You can contribute to the project via our Codeberg repo: [https://codeberg.org/yelosan/hugo-semantic-web](https://codeberg.org/yelosan/hugo-semantic-web).
 
-You can also help with our documentation via our GitLab repo: [https://gitlab.com/yelosan/hugo-semantic-web-docs](https://gitlab.com/yelosan/hugo-semantic-web-docs).
+You can also help with our documentation via our Codeberg repo: [https://codeberg.org/yelosan/hugo-semantic-web-docs](https://codeberg.org/yelosan/hugo-semantic-web-docs).
 
 # Contact Us
 
@@ -1519,7 +1526,7 @@ If you want to discuss something or ask a question, you can do it in our project
 
 ## Documentation
 
-For documentation improvements, file it in our documentation GitLab: [https://gitlab.com/yelosan/hugo-semantic-web-docs/issues](https://gitlab.com/yelosan/hugo-semantic-web-docs/issues)
+For documentation improvements, file it in our documentation Codeberg issues tracker: [https://codeberg.org/yelosan/hugo-semantic-web-docs/issues](https://codeberg.org/yelosan/hugo-semantic-web-docs/issues)
 
 ---
 
