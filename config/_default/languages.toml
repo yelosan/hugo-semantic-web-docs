@@ -2,81 +2,83 @@
 
 [en]
   languageName = "English"
-  languageFlag = "🇬🇧"
   languageCode = "en"
   #languageCodeCountry = "DO_NOT_USE"
   timeZone = "Etc/UTC"
   weight = 110
+  [en.params]
+    languageFlag = "🇬🇧"
 
 #[en-ph]
   #languageName = "English (PH)"
-  #languageFlag = "🇵🇭"
   #languageCodeCountry = "ph"
   #timeZone = "Asia/Manila"
   #weight = 111
+  #[en-ph.params]
+    #languageFlag = "🇵🇭"
 
 #[fil]
   #languageName = "Filipino"
-  #languageFlag = "🇵🇭"
   #languageCode = "fil"
   #languageCodeCountry = "ph"
   #timeZone = "Asia/Manila"
   #weight = 120
   #title = ""
   #[fil.params]
+    #languageFlag = "🇵🇭"
     #description = ""     # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
 
 #[tl-tglg]
   #languageName = "Tagalog Baybayin"
-  #languageFlag = "🇵🇭"
   #languageCode = "tl-Tglg"
   #languageCodeCountry = "ph"
   #timeZone = "Asia/Manila"
   #weight = 121
   #title = ""
   #[tl.tglg.params]
+    #languageFlag = "🇵🇭"
     #description = ""     # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
 
 #[zh-hant]
   #languageName = "中文（繁體）"
-  #languageFlag = "🇨🇳"
   #languageCode = "zh-Hant"
   #languageCodeCountry = "cn"
   #timeZone = "Asia/Shanghai"
   #weight = 130
   #title = ""
   #[zh-hant.params]
+    #languageFlag = "🇨🇳"
     #description = ""     # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
 
 #[zh-hans]
   #languageName = "中文（简体）"
-  #languageFlag = "🇨🇳"
   #languageCode = "zh-Hans"
   #languageCodeCountry = "cn"
   #timeZone = "Asia/Shanghai"
   #weight = 131
   #title = ""
   #[zh-hans.params]
+    #languageFlag = "🇨🇳"
     #description = ""     # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
 
 #[ja]
   #languageName = "日本語"
-  #languageFlag = "🇯🇵"
   #languageCode = "ja"
   #languageCodeCountry = "jp"
   #timeZone = "Asia/Tokyo"
   #weight = 140
   #title = ""
   #[ja.params]
+    #languageFlag = "🇯🇵"
     #description = ""     # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
 
 #[ko]
   #languageName = "한국어"
-  #languageFlag = "🇰🇷"
   #languageCode = "ko"
   #languageCodeCountry = "kr"
   #timeZone = "Asia/Seoul"
   #weight = 150
   #title = ""
   #[ko.params]
+    #languageFlag = "🇰🇷"
     #description = ""      # IMPT for Schema.org; OpenGraph; Twitter Cards -- for RDFa, Microdata, JSON-LD
