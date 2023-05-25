@@ -42,13 +42,7 @@ These are the currently supported Schema.org Types:
 
 ## Hugo module method
 
-> 1. Initialize your project as a module:
-
-```shell
-hugo mod init your-site-name-or-link-to-repo
-```
-
-> 2. In your `hugo` config file add the following:
+> 1. In your `hugo` config file add the following:
 
 ```toml
 [module]
@@ -74,18 +68,24 @@ module:
 }
 ```
 
-> 3. Download Hugo Semantic Web module
-
-```shell
-hugo mod get codeberg.org/yelosan/hugo-semantic-web
-```
-
-> 4. Add this in `/layouts/_default/baseof.html` (or whichever is appropriate):
+> 2. Add this in `/layouts/_default/baseof.html` (or whichever is appropriate):
 
 ```go-html-template
 {{ $semwebcss := resources.Get "css/semweb-style.css" }}
 {{ $semwebstyle := $semwebcss | resources.Minify }}
 <link rel="stylesheet" href="{{ $semwebstyle.RelPermalink }}" media="all" type="text/css" />
+```
+
+> 3. Initialize your project as a module:
+
+```shell
+hugo mod init your-site-name-or-link-to-repo
+```
+
+> 4. Download Hugo Semantic Web module
+
+```shell
+hugo mod get codeberg.org/yelosan/hugo-semantic-web
 ```
 
 > 5. Proceed to the next [step](#types).
