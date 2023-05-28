@@ -31,7 +31,7 @@
     enableMissingTranslationPlaceholders = true
 
   ## Other settings ##
-    disableKinds = ["robotsTXT", "taxonomyTerm"]
+    disableKinds = ["robotsTXT"]
 
 #### LANG stuff ####
   defaultContentLanguage = "en"
