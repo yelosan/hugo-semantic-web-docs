@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 {{/* Multilang support for lang attribute */}}
-<html lang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}" prefix="og: https://ogp.me/ns#{{ if in .Site.Params.mainTypes .Type }} article: https://ogp.me/ns/article#{{ end }}">
+<html lang="{{ site.Language.LanguageCode }}" dir="{{ site.Language.LanguageDirection }}" prefix="og: https://ogp.me/ns#{{ if in .Site.Params.mainTypes .Type }} article: https://ogp.me/ns/article#{{ end }}" class="h-feed">
   <head>
     <meta charset="utf-8" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     {{- /* BGN: Translations */ -}}
       {{- if .IsTranslated }}
       {{ range .AllTranslations -}}
-      <link rel="alternate" hreflang="{{ or (.Site.LanguageCode) (.Site.Language.Lang) }}" href="{{ .Permalink }}" />
+      <link rel="alternate" hreflang="{{ or (.Site.Language.LanguageCode) (.Site.Language.Lang) }}" href="{{ .Permalink }}" />
       {{ end -}}
       {{ range first 1 .AllTranslations }}<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />{{ end }}
       {{- end -}}
