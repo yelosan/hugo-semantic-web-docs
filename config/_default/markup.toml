@@ -24,6 +24,10 @@ defaultMarkdownHandler = "goldmark"                               # default: gol
     table = true                                                  # default: true
     taskList = true                                               # default: true
     typographer = true                                            # default: true
+    [goldmark.extensions.CJK]
+      enable = true                                              # default: false
+      eastAsianLineBreaks = false                                 # default: false
+      escapedSpace = true                                        # default: false
   [goldmark.parser]
     autoHeadingID = true                                          # default: true
     autoHeadingIDType = "github"                                  # default: github
