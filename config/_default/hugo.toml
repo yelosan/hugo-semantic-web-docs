@@ -19,11 +19,9 @@
 
 
 ####### Backend settings #######
-  #canonifyURLs = true                                     # true for our use-case
   #disableAliases = true                                  # use this if we want to use server redirects
   enableEmoji = true                                      # format :smile:
   enableGitInfo = false                                   # it is in Git time
-  #relativeURLs = false                                    # false for our use-case; make all relative URLs relative to content root
   #refLinksNotFoundURL = "https://semweb.youronlyone.one/"
 
   ## Dev settings ##
