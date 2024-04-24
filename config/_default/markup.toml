@@ -3,55 +3,99 @@
 defaultMarkdownHandler = "goldmark"                               # default: goldmark
 
 [asciidocExt]
-  backend = "html5"                                               # default: html5
+  backend = 'html5'                                               # default: html5
   extensions = []                                                 # default: []
-  failureLevel = "fatal"                                          # default: fatal
+  #extensions = ['asciidoctor-html5s', 'asciidoctor-diagram']
+  failureLevel = 'fatal'                                          # default: fatal
   noHeaderOrFooter = true                                         # default: true
   preserveTOC = false                                             # default: false
-  safeMode = "unsafe"                                             # default: unsafe
+  safeMode = 'unsafe'                                             # default: unsafe
   sectionNumbers = false                                          # default: false
   trace = false                                                   # default: false
   verbose = false                                                 # default: false
   workingFolderCurrent = false                                    # default: false
   [asciidocExt.attributes]
 
+
 [goldmark]
+  duplicateResourceFiles = false                                  # default: false; will enable Hugo’s embedded link render hook and embedded image render hook.
+
   [goldmark.extensions]
     definitionList = true                                         # default: true
     footnote = true                                               # default: true
     linkify = true                                                # default: true
+    linkifyProtocol = 'https'                                     # default: https
     strikethrough = true                                          # default: true
     table = true                                                  # default: true
     taskList = true                                               # default: true
-    typographer = true                                            # default: true
-    [goldmark.extensions.CJK]
+
+    [goldmark.extensions.cjk]
+      eastAsianLineBreaks = true                                 # default: false
+      eastAsianLineBreaksStyle = 'css3draft'                         # default: simple
       enable = true                                              # default: false
-      eastAsianLineBreaks = false                                 # default: false
       escapedSpace = true                                        # default: false
+
+    ### Enable the passthrough extension if you include mathematical equations and expressions in your Markdown using LaTeX or TeX typesetting syntax.
+    ### https://gohugo.io/content-management/mathematics/
+    [goldmark.extensions.passthrough]
+      enable = true                                              # default: false
+
+      [goldmark.extensions.passthrough.delimiters]
+        #block = []                                                # default: []
+        #inline = []                                               # default: []
+        block = [['\[', '\]'], ['$$', '$$']]
+        inline = [['\(', '\)']]
+
+    [goldmark.extensions.typographer]
+      apostrophe = '&#x2019;'                                     # ’
+      disable = false                                             # default: false
+      ellipsis = '&#x2026;'                                       # …
+      endash = '&#x2013;'                                         # –
+      emdash = '&#x2014;'                                         # —
+      leftSingleQuote = '&#x2018;'                                # ‘
+      rightSingleQuote = '&#x2019;'                               # ’
+      leftDoubleQuote = '&#x201c;'                                # “
+      rightDoubleQuote = '&#x201d;'                               # ”
+      leftAngleQuote = '&#xab;'                                   # «
+      rightAngleQuote = '&#xbb;'                                  # »
+
   [goldmark.parser]
     autoHeadingID = true                                          # default: true
     autoHeadingIDType = "github"                                  # default: github
-    wrapStandAloneImageWithinParagraph = false                     # default: true
+    wrapStandAloneImageWithinParagraph = false                     # default: true; Set to false when using an image render hook to render standalone images as figure elements.
+
     [goldmark.parser.attribute]
       block = true                                               # default: false; keep true to use attributes in block type markdown
       title = true                                                # default: true
+
+  [goldmark.renderHooks]
+    [goldmark.renderHooks.image]
+      enableDefault = true                                       # default: false; automatically enabled for multilingual single-host sites if duplication of shared page resources is disabled.
+
+    [goldmark.renderHooks.link]
+      enableDefault = true                                       # default: false; automatically enabled for multilingual single-host sites if duplication of shared page resources is disabled.
+
   [goldmark.renderer]
     hardWraps = false                                             # default: false
     unsafe = true                                                # default: false; keep true to use full HTML in markdown files
     xhtml = false                                                 # default: false
+
 
 [highlight]
   anchorLineNos = false                                           # default: false
   codeFences = true                                               # default: true
   guessSyntax = true                                             # default: false
   hl_Lines = ""                                                   # default: ""
+  hl_inline = false                                               # default: false
   lineAnchors = ""                                                # default: ""
   lineNoStart = 1                                                 # default: 1
   lineNos = false                                                 # default: false
   lineNumbersInTable = true                                       # default: true
   noClasses = true                                                # default: true
+  noHl = false                                                    # default: false
   style = "monokai"                                               # default: monokai
   tabWidth = 4                                                    # default: 4
+
 
 [tableOfContents]
   endLevel = 3                                                    # default: 3
