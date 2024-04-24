@@ -1,4 +1,9 @@
-#mainSections = ["blog", "posts"]                                             # Hugo default
+# See: https://gohugo.io/getting-started/configuration/#merge-configuration-from-themes
+
+mainSections = ['blog', 'posts']                          # Hugo default
+
+# See: https://gohugo.io/content-management/mathematics/
+math = false                                              # Should always be false.
 
 websubhubs = ["https://pubsubhubbub.appspot.com/", "https://youronlyone.superfeedr.com/", "https://pubsubhubbub.superfeedr.com/", "https://websubhub.com/hub"]
 
@@ -30,6 +35,26 @@ websubhubs = ["https://pubsubhubbub.appspot.com/", "https://youronlyone.superfee
 ### END: Theme settings
 
 ### BGN: Other Settings ###
+  [indieweb]
+    enable = false
+    indieauth = 'https://indieauth.com/auth'
+    pingback = 'https://webmention.io/semweb.youronly.one/xmlrpc'
+    webmention = 'https://webmention.io/semweb.youronly.one/webmention'
+
+    # Usually: 'https://pubsubhubbub.appspot.com/', 'https://examplecom.superfeedr.com/', 'https://pubsubhubbub.superfeedr.com/', 'https://websubhub.com/hub'
+    websubhubs = ['https://pubsubhubbub.appspot.com/', 'https://semweb.superfeedr.com/', 'https://pubsubhubbub.superfeedr.com/', 'https://websubhub.com/hub']
+
+    [openid]
+      delegate = 'https://semweb.youronly.one/'
+      server = 'https://openid.indieauth.com/openid'
+
+  [mathml]
+    position = 'head'
+    src = 'https://cdn.jsdelivr.net/npm/mathjax@latest/es5/tex-mml-chtml.min.js'
+    # TO TEST. See: /globals/math.html
+    #block = "[['\\[', '\\]'], ['$$', '$$']]"
+    #inline = "[['\\(', '\\)']]"
+
   [semweb]
 		copyrightnotice = "Copyleft 🄯 CC-BY-SA 4.0 International by JC John Sese Cuneta"
 		credittext = "Semantic Web for Hugo (https://semweb.youronly.one)"
