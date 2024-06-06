@@ -1,65 +1,65 @@
-https://:project.pages.dev/*
-  X-Robots-Tag: noindex, follow
-
-https://youronly.one/*
-  X-Robots-Tag: all, index, follow
-
-https://confidentraveler.youronly.one/*
-  X-Robots-Tag: all, index, follow
-
-https://faithfulathlete.youronly.one/*
-  X-Robots-Tag: all, index, follow
-
-https://iam.youronly.one/*
-  X-Robots-Tag: all, index, follow
-
-https://images.youronly.one/*
-  X-Robots-Tag: all, index, follow
-
-https://im.youronly.one/*
-  X-Robots-Tag: all, index, follow
+https://yuki.youronly.one/*
+  X-Robots-Tag: all
 
 https://love.youronly.one/*
-  X-Robots-Tag: all, index, follow
-
-https://p.youronly.one/*
-  X-Robots-Tag: all, index, follow
-
-https://rsc.youronly.one/*
-  X-Robots-Tag: all, index, follow
-
-https://semweb.youronly.one/*
-  X-Robots-Tag: all, index, follow
+  X-Robots-Tag: all
 
 https://snoworld.youronly.one/*
-  X-Robots-Tag: all, index, follow
+  X-Robots-Tag: all
 
 https://techmagus.youronly.one/*
-  X-Robots-Tag: all, index, follow
+  X-Robots-Tag: all
 
 https://way.youronly.one/*
-  X-Robots-Tag: all, index, follow
+  X-Robots-Tag: all
 
-https://yelosan.youronly.one/*
-  X-Robots-Tag: all, index, follow
+https://semweb.youronly.one/*
+  X-Robots-Tag: all
+
+https://p.youronly.one/*
+  X-Robots-Tag: all
+
+https://iam.youronly.one/*
+  X-Robots-Tag: all
+
+https://confidentraveler.youronly.one/*
+  X-Robots-Tag: all
+
+https://faithfulathlete.youronly.one/*
+  X-Robots-Tag: all
 
 https://yugenbard.youronly.one/*
-  X-Robots-Tag: all, index, follow
+  X-Robots-Tag: all
 
-https://yuki.youronly.one/*
-  X-Robots-Tag: all, index, follow
+https://images.youronly.one/*
+  X-Robots-Tag: all
+
+https://rsc.youronly.one/*
+  X-Robots-Tag: all
+
+https://im.youronly.one/*
+  X-Robots-Tag: all
+
+https://youronly.one/*
+  X-Robots-Tag: all
+
+https://yelosan.youronly.one/*
+  X-Robots-Tag: all
+
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex
 
 /*
-  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
-  Link: <https://youronly.one>; rel="me openid.delegate", <https://im.youronly.one>; rel="me openid.delegate", <https://iam.youronly.one>; rel="me openid.delegate", <https://yelosan.youronly.one>; rel="publisher me", <https://indieauth.com/auth>; rel="indieauth-metadata authorization_endpoint", <https://webmention.io/im.youronly.one/webmention>; rel="webmention", <https://openid.indieauth.com/openid>; rel="openid.server", <https://pubsubhubbub.appspot.com/>; rel="hub", <https://websubhub.com/hub>; rel="hub", <https://youronlyone.superfeedr.com/>; rel="hub", <https://pubsubhubbub.superfeedr.com/>; rel="hub", <https://youronly.one/0xF2F9BE4C3D8E4F53.pub.asc>; rel="pgpkey", <https://semweb.youronly.one>; rel="project"
+  Strict-Transport-Security: max-age=63072000;includeSubDomains;preload
+  Link: <https://youronly.one>;rel="me openid.delegate",<https://im.youronly.one>;rel="me openid.delegate",<https://iam.youronly.one>;rel="me openid.delegate",<https://yelosan.youronly.one>;rel="publisher me",<https://indieauth.com/auth>;rel="indieauth-metadata authorization_endpoint",<https://webmention.io/im.youronly.one/webmention>;rel="webmention",<https://openid.indieauth.com/openid>;rel="openid.server",<https://pubsubhubbub.appspot.com/>;rel="hub",<https://websubhub.com/hub>;rel="hub",<https://youronlyone.superfeedr.com/>;rel="hub",<https://pubsubhubbub.superfeedr.com/>;rel="hub",<https://youronly.one/0xF2F9BE4C3D8E4F53.pub.asc>;rel="pgpkey",<https://semweb.youronly.one>;rel="project"
   X-Pingback: https://webmention.io/im.youronly.one/xmlrpc
   # X-DNS-Prefetch-Control: off
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
-  Referrer-Policy: no-referrer, strict-origin-when-cross-origin
+  Referrer-Policy: no-referrer,strict-origin-when-cross-origin
   Access-Control-Allow-Origin: *
-  # Content-Encoding: gzip, deflate
-  Vary: Upgrade-Insecure-Requests, Origin, Accept-Encoding
+  # Content-Encoding: gzip,deflate
+  Vary: Upgrade-Insecure-Requests,Origin,Accept-Encoding
 
   ##############################################################################
   ###                       Cross-Origin-Opener-Policy                       ###
@@ -73,8 +73,8 @@ https://yuki.youronly.one/*
   ### - unsafe-none                                                          ###
   ###   - default                                                            ###
   ##############################################################################
-  #Cross-Origin-Opener-Policy: same-origin-allow-popups-plus-coep; report-to="default"
-  Cross-Origin-Opener-Policy: same-origin-allow-popups; report-to="default"
+  #Cross-Origin-Opener-Policy: same-origin-allow-popups-plus-coep;report-to="default"
+  Cross-Origin-Opener-Policy: same-origin-allow-popups;report-to="default"
 
   ##############################################################################
   ###                      Cross-Origin-Resource-Policy                      ###
@@ -102,14 +102,17 @@ https://yuki.youronly.one/*
   ###   - default                                                            ###
   ###   - some third-party resources not yet CORP/CORS enabled               ###
   ##############################################################################
-  #Cross-Origin-Embedder-Policy: credentialless; report-to="default"
-  Cross-Origin-Embedder-Policy: unsafe-none; report-to="default"
+  #Cross-Origin-Embedder-Policy: credentialless;report-to="default"
+  Cross-Origin-Embedder-Policy: unsafe-none;report-to="default"
 
   ### CSP moved to Cloudflare worker. _headers file has a 1000-character restriction per line. ###
-  Permissions-Policy: accelerometer=(), ambient-light-sensor=(), autoplay=(), battery=(), camera=(), cross-origin-isolated=(self), display-capture=(self), document-domain=(), encrypted-media=*, execution-while-not-rendered=(), execution-while-out-of-viewport=*, fullscreen=(self), geolocation=(), gyroscope=(), keyboard-map=(self), magnetometer=(), microphone=(), midi=(), navigation-override=(self), payment=(), picture-in-picture=*, publickey-credentials-get=(self), screen-wake-lock=(), sync-xhr=(self), usb=(), web-share=(self), xr-spatial-tracking=(self), clipboard-read=(self), clipboard-write=(self), gamepad=(self), speaker-selection=(self), conversion-measurement=(self), focus-without-user-activation=(self), hid=(self), idle-detection=(self), serial=(self), trust-token-redemption=(self), browsing-topics=()
+
+  Permissions-Policy: accelerometer=(),ambient-light-sensor=(),attribution-reporting=*,autoplay=(),battery=(),bluetooth=(),camera=(),compute-pressure=(),clipboard-read=(self),clipboard-write=(self),conversion-measurement=(self),cross-origin-isolated=(self),display-capture=(self),document-domain=(),encrypted-media=*,execution-while-not-rendered=*,execution-while-out-of-viewport=*,focus-without-user-activation=(self),fullscreen=(self),gamepad=(self),geolocation=(),gyroscope=(),hid=(self),identity-credentials-get=*,idle-detection=(),keyboard-map=(self),local-fonts=(self),magnetometer=(),microphone=(self),midi=(self),navigation-override=(self),otp-credentials=(),payment=(),picture-in-picture=*,publickey-credentials-create=(self),publickey-credentials-get=(self),screen-wake-lock=(self),serial=(self),speaker-selection=(self),storage-access=(),sync-xhr=(self),trust-token-redemption=(self),usb=(self),web-share=(self),window-management=(self),window-placement=(self),vertical-scroll=(self),xr-spatial-tracking=(self)
+
   Report-To: {"group":"default","max_age":31536000,"endpoints":[{"url":"https://yelosan.report-uri.com/a/d/g"}],"include_subdomains":true}
+
   NEL: {"report_to":"default","max_age":31536000,"include_subdomains":true}
   #X-Powered-By: Hugo
 
   ### YourOnly.One: We do not use cookies. Only here for reference ###
-  # Set-Cookie: __Host-sess=123; path=/; Secure; HttpOnly; SameSite
+  # Set-Cookie: __Host-sess=123;path=/;Secure;HttpOnly;SameSite
