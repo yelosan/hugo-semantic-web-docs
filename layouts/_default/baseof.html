@@ -28,7 +28,7 @@
     {{ with .Site.Params.twitter_domain }}<meta name="twitter:domain" content="{{ . }}">{{ end }}
     {{ with .Site.Params.twitter_site }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
     {{ partial "schemas/semweb.html" . }}
-    {{ if site.IsServer }}
+    {{ if hugo.IsServer }}
       <meta http-equiv="cache-control" content="no-cache">
     {{ end }}
 
