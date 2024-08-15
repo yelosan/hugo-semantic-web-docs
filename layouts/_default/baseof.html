@@ -24,9 +24,9 @@
     <meta name="modified" content="{{ .Lastmod.Format "2006-01-02T15:04:05-0700" }}">
     {{ template "_internal/opengraph.html" . }}
     {{ template "_internal/twitter_cards.html" . }}
-    {{ with .Site.Social.twitter_creator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
-    {{ with .Site.Social.twitter_domain }}<meta name="twitter:domain" content="{{ . }}">{{ end }}
-    {{ with .Site.Social.twitter_site }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
+    {{ with .Site.Params.twitter_creator }}<meta name="twitter:creator" content="{{ . }}" />{{ end }}
+    {{ with .Site.Params.twitter_domain }}<meta name="twitter:domain" content="{{ . }}">{{ end }}
+    {{ with .Site.Params.twitter_site }}<meta name="twitter:site" content="{{ . }}" />{{ end }}
     {{ partial "schemas/semweb.html" . }}
     {{ if site.IsServer }}
       <meta http-equiv="cache-control" content="no-cache">
