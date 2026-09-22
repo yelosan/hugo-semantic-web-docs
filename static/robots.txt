@@ -1,8 +1,49 @@
-User-agent: *
-Disallow:
+# As a condition of accessing this website, you agree to abide by the
+# following content signals:
+
+# (a)  If a content-signal = yes, you may collect content for the
+#      corresponding use.
+# (b)  If a content-signal = no, you may not collect content for the
+#      corresponding use.
+# (c)  If the website operator does not include a content signal for a
+#      corresponding use, the website operator neither grants nor restricts
+#      permission via content signal with respect to the corresponding use.
+
+# The content signals and their meanings are:
+
+# search: building a search index and providing search results (e.g., returning
+#         hyperlinks and short excerpts from your website's contents). Search
+#         does not include providing AI-generated search summaries.
+# ai-input: inputting content into one or more AI models (e.g., retrieval
+#           augmented generation, grounding, or other real-time taking of
+#           content for generative AI search answers).
+# ai-train: training or fine-tuning AI models.
+
+# ANY RESTRICTIONS EXPRESSED VIA CONTENT SIGNALS ARE EXPRESS RESERVATIONS OF
+# RIGHTS UNDER ARTICLE 4 OF THE EUROPEAN UNION DIRECTIVE 2019/790 ON COPYRIGHT
+# AND RELATED RIGHTS IN THE DIGITAL SINGLE MARKET.
+
+
+# Allow all except AI training
 
 User-agent: *
+Content-signal: search=yes, ai-input=yes, ai-train=no, use=reference
 Allow: /
+
+
+# ATmosphere (ATproto) sites hosted on Mochott_
+
+Sitemap: https://dalisay.youronly.one/sitemap.xml
+Sitemap: https://reviews.youronly.one/sitemap.xml
+Sitemap: https://austronesian.youronly.one/sitemap.xml
+Sitemap: https://surat.youronly.one/sitemap.xml
+Sitemap: https://hangganan.youronly.one/sitemap.xml
+Sitemap: https://gamut.youronly.one/sitemap.xml
+Sitemap: https://kenhaus.youronly.one/sitemap.xml
+Sitemap: https://poems.youronly.one/sitemap.xml
+
+
+# Hugo sites hosted on Pages
 
 Sitemap: https://im.youronly.one/sitemap-index.xml
 Sitemap: https://im.youronly.one/love/sitemap.xml
